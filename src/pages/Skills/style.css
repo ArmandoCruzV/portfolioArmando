@@ -1,0 +1,282 @@
+.skills {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.skills-container {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 20% 80%;
+  display: grid;
+  justify-content: center;
+  padding: 0 10px 22px 10px;
+}
+
+.skills-container h1 {
+  padding-top: 2rem;
+  justify-self: center;
+  font-size: 5rem;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+  color: #CDC1FF;
+}
+
+.skills-circle {
+  top: 0%;
+  right: 0%;
+  width: 50vh;
+  height: 50vh;
+}
+.skills-circle:before {
+  background: #563A9C;
+  width: 70vh;
+  height: 70vh;
+  transform: translate(-20%, -20%);
+}
+
+.skills-circle-1 {
+  top: 25%;
+  right: 30%;
+  width: 30vh;
+  height: 30vh;
+}
+.skills-circle-1:before {
+  background: green;
+  width: 50vh;
+  height: 50vh;
+  transform: translate(-20%, -20%);
+}
+
+
+.skills-circle-2 {
+  top: 50%;
+  right: 70%;
+  width: 50vh;
+  height: 50vh;
+}
+.skills-circle-2:before {
+  background: red;
+  width: 70vh;
+  height: 70vh;
+  transform: translate(-20%, -20%);
+}
+
+
+.skills-circle-3 {
+  top: 80%;
+  right: 65%;
+  width: 20vh;
+  height: 20vh;
+}
+.skills-circle-3:before {
+  background: green;
+  width: 40vh;
+  height: 40vh;
+  transform: translate(-20%, -20%);
+}
+
+.skills-circle-4 {
+  top: 80%;
+  right: 30%;
+  width: 20vh;
+  height: 20vh;
+}
+.skills-circle-4:before {
+  background: #A64D79;
+  width: 40vh;
+  height: 40vh;
+  transform: translate(-20%, -20%);
+}
+
+.skills-circle-5 {
+  top: 80%;
+  right: 5%;
+  width: 30vh;
+  height: 30vh;
+}
+.skills-circle-5:before {
+  background: #FAB12F;
+  width: 50vh;
+  height: 50vh;
+  transform: translate(-20%, -20%);
+}
+
+.skills-circle,
+.skills-circle-1,
+.skills-circle-2,
+.skills-circle-3,
+.skills-circle-4,
+.skills-circle-5{
+  position: absolute;
+  background:  #89A8B2;
+  border-radius: 50%;
+  opacity: 0.4;
+  z-index: -1;
+  box-shadow: 0px 0px 30px #89A8B2,
+              0px 0px 40px #89A8B2,
+              0px 0px 50px #89A8B2;
+  animation: color 7s infinite;
+}
+@keyframes color {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(100deg); }
+}
+.skills-circle:before,
+.skills-circle-1:before,
+.skills-circle-2:before,
+.skills-circle-3:before,
+.skills-circle-4:before,
+.skills-circle-5:before{
+  content: '';
+  position:absolute;
+  opacity: 1;
+  border-radius: 50%;
+  filter: blur(2rem);
+}
+
+.arrow-left,
+.arrow-right {
+  font-size: 3rem;
+  color: black;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(0.4rem);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 9;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 60%;
+  left: 15%;
+}
+
+.arrow-right {
+  position: absolute;
+  top: 60%;
+  right: 15%;
+}
+
+.skills-cards {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+
+.card-0,
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+  display:grid;
+  grid-template-rows: 33% 33% 33%;
+  position: absolute;
+  width: 15rem;
+  height: 100%;
+}
+
+.card-0,
+.card-4,
+.card-1,
+.card-3,
+.card-2 {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 9px;
+  padding: 10px;
+  background: #fafafa10;
+  backdrop-filter: blur(0.4rem);
+  align-self: center;
+}
+
+.card-0--1,
+.card-0--2,
+.card-0--3,
+.card-1--1,
+.card-1--2,
+.card-1--3,
+.card-2--1,
+.card-2--2,
+.card-2--3,
+.card-3--1,
+.card-3--2,
+.card-3--3,
+.card-4--1,
+.card-4--2,
+.card-4--3{
+  width: 70%;
+  height: 70%; 
+  justify-self: center;
+  align-self: center;
+}
+
+.container-card-skills {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 80% 20%;
+  justify-content: center;
+}
+
+.title-skills {
+  text-align: center;
+  font-weight: bold;
+}
+
+.react,
+.css,
+.html,
+.js,
+.springboot,
+.java,
+.mysql,
+.git,
+.github,
+.ubuntu,
+.archlinux,
+.bash,
+.ts {
+  width: 100%;
+  height: 100%;
+  padding:3px;
+  border-radius: 9px;
+  background: black;
+}
+
+.react { color: #B4EBE6; }
+.css { color: #4D55CC; }
+.html { color: #FFA725; }
+.js { color: #FFB200; }
+.springboot { color: #9DC08B; }
+.java { color: #A9B5DF; }
+.mysql { color: #73C7C7; }
+.git { color: #D2665A; }
+.github { color: #4C7B8B; }
+.ubuntu { color: #FFC785; }
+.archlinux { color: #2973B2; }
+.bash { color: white; }
+.ts { color: #7886C7 }
+
+@media (min-width: 1400px) {
+.arrow-left,
+.arrow-right {
+  font-size: 4rem;
+}
+
+.arrow-left { left: 23%; }
+.arrow-right { right: 23%; }
+
+}
+
+
+@media (min-width: 2000px) {
+.skills-container { height: 60vh ; }
+
+.arrow-left { left: 30%; }
+.arrow-right { right: 30%; }
+
+}

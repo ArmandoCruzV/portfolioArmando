@@ -1,0 +1,452 @@
+.about {
+  background: white;
+  padding: 20px;
+  padding-top: 90px;
+  overflow-x: hidden;
+}
+
+.about-container {
+  background: #03001C;
+  border-radius: 9px;
+  padding: 15px;
+  padding-top: 10vh;  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 600px );
+  justify-content: center;
+}
+
+.h1-container {
+  width: 380px;
+  justify-self: start;
+  text-align: start;
+  padding: 5px;
+}
+
+.H1inactive {
+  background: linear-gradient(to left, blue, #76ABAE);
+  background-clip: text;
+  font-size: 4rem;
+  color: transparent; 
+  white-space: nowrap;
+  width: 12ch;
+  overflow: hidden;
+  
+  animation: type2 3s;
+}
+@keyframes type2 {
+  from { width: 0; }
+}
+
+.H1active  {
+  background: linear-gradient(to left, blue, #76ABAE);
+  background-clip: text;
+  font-size: 4rem;
+  color: transparent; 
+  white-space: nowrap;
+  width: 12ch;
+  overflow: hidden;
+  
+  animation: type 3s;
+}
+@keyframes type {
+  from { width: 0; }
+}
+
+h3 {
+  text-align: center;
+  color: #9EDF9C;
+  font-size: 2rem;
+}
+
+p {
+  padding: 10px;
+  color: white;
+
+  animation-name: ejemploAnimacion;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+    @keyframes ejemploAnimacion {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0.5;
+            }
+            100% {
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+
+.img-profile {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  background: white;
+  justify-self: center;
+  border-radius: 0% 50% 0% 50%;
+}
+
+.tree {
+  padding: 20px;
+  color: white;
+  text-align: center;
+  height: 30rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  align-content: center;
+}
+
+.tree:hover .body {
+  position: absolute;
+  transform: translate(-0%,-50%);
+  transition: 0s; /* Transición suave para el hover */
+}
+
+.body {
+  transition: 2s; /* Transición suave para el hover */
+  left: 10px;
+  display: grid;
+  width: 150px;
+  height: 200px;
+  margin-bottom: 20px;
+  background: #404258;
+  border-radius: 50% 50% 20% 20% / 80% 80% 20% 50%;
+}
+
+.stomach-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 10% 70% 20%;
+}
+
+.wing-right,
+.wing-left {
+  width: 100%;
+  height: 100%;
+  background: #404258;
+  border-bottom: solid 5px #432E54;
+  border-radius: 80% 30% / 90% 30%;
+}
+
+.body:hover .wing-right { 
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-name: w-r;
+}
+@keyframes w-r {
+0% {
+  transform-origin: top;
+  transform: rotate(0deg);
+}
+50% {
+  transform-origin: top;
+  transform: rotate(25deg)
+}
+100% {
+  transform-origin: top;
+  transform: rotate(-25deg);
+}
+}
+
+.body:hover .wing-left { 
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-name: w-l;
+}
+@keyframes w-l {
+0% {
+  transform-origin: top;
+  transform: rotate(0deg);
+}
+50% {
+  transform-origin: top;
+  transform: rotate(-25deg)
+}
+100% {
+  transform-origin: top;
+  transform: rotate(25deg);
+}
+}
+
+.wing-left {
+  height: 80%;
+  width: 170%;
+  align-self: end;
+  rotate: -10deg; 
+}
+
+.stomach {
+  align-self: end;
+  width: 120px;
+  height: 100px;
+  background: white;
+  border-radius: 50% 50% 20% 20% / 80% 80% 20% 50%;
+}
+
+.head {
+  align-self: start;
+  margin-top: 10px;
+  width: 120px;
+  height: 80px;
+  background: white;
+  border-radius: 50% 50% 20% 20% / 80% 80% 20% 50%;
+  display: grid;
+  grid-template-areas:
+    "eyebrow"
+    "eyes"
+    "beak";
+}
+
+.eyebrow {
+  width: 25px;
+  height: 15px;
+  background: #404258;
+  margin-left: 30%;
+  border-radius: 0% 30% 50% 50%;
+  grid-area: eyebrow;
+}
+
+.eyes {
+  display: grid;
+  grid-area: eyes;
+  grid-template-columns: 50% 50%;
+}
+
+.eye1 {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  border: solid 1px black;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: grid;
+}
+
+.eye2 {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  border: solid 1px black;
+  margin-top: 10px;
+  display: grid;
+}
+
+.pupila {
+  justify-self: start;
+  align-self: center;
+  width: 60%;
+  height: 60%;
+  background: black;
+  border-radius: 50%;
+}
+
+.body:hover .pupila {
+  justify-self: center;
+}
+
+.brillo {
+  width: 40%;
+  height: 40%;
+  background: white;
+  border-radius: 50%;
+  justify-self: end;
+  align-self: start;
+}
+
+.beak {
+  width: 90px;
+  height: 22px;
+  margin-top: 2px;
+  margin-right: 10px;
+  grid-area: beak;
+  display: grid;
+
+}
+
+.beak-top {
+  width: 50%;
+  height: 100%;
+  background: #FFDDAE;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  border-radius: 90% 60% 0% 50%;
+}
+.body:hover .beak-top{
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-name: b-t;
+}
+@keyframes b-t {
+0% {
+  transform-origin: right;
+  transform: rotate(0deg);
+}
+50% {
+  transform-origin: right;
+  transform: rotate(25deg)
+}
+100% {
+  transform-origin: right;
+  transform: rotate(0deg);
+}
+}
+
+.beak-down {
+  width: 50%;
+  height: 100%;
+  background: #FFDDAE;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  border-radius: 50% 0% 60% 90%;
+}
+.body:hover .beak-down{
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-name: b-d;
+}
+@keyframes b-d {
+0% {
+  transform-origin: right;
+  transform: rotate(0deg);
+}
+50% {
+  transform-origin: right;
+  transform: rotate(-25deg)
+}
+100% {
+  transform-origin: right;
+  transform: rotate(0deg);
+}
+}
+
+.legs {
+  width: 100%;
+  height: 100px;
+  padding-top: 5px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.leg-left,
+.leg-right {
+  margin-left: 10px;
+  width: 35%;
+  height: 35%;
+  display: grid;
+  grid-template-rows: 80% 20%;
+}
+
+.leg-left-foot,
+.leg-right-foot {
+  width: 50%;
+  height: 100%;
+  justify-self: end;
+  background: #E07B39;
+  border-top-left-radius: 50%;
+}
+
+.left-foot,
+.right-foot {
+  width: 100%;
+  height: 100%;
+  background: #E07B39;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+}
+
+.body:hover .leg-left {
+  animation-duration: 0.4s;
+  animation-name: leg-L;
+  animation-iteration-count: infinite;
+}
+@keyframes leg-L {
+0% {
+  transform-origin: right;
+  transform: rotate(0deg);
+}
+
+50% {
+  transform-origin: right;
+  transform: rotate(50deg); 
+}
+100% { 
+  transform: rotate(0deg); 
+}
+}
+
+.body:hover .leg-right {
+  animation-duration: 0.4s;
+  animation-name: leg-R;
+  animation-iteration-count: infinite;
+}
+@keyframes leg-R {
+0% {
+  transform-origin: right;
+  transform: rotate(50deg); 
+}
+50% { 
+  transform: rotate(0deg); 
+}
+100% {
+  transform-origin: right;
+  transform: rotate(50deg); 
+}
+}
+
+@media (min-width: 2500px) {
+
+  .about {
+    padding-top: 130px;
+  }
+
+  .about-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .about-container h1 {
+    font-size: 5rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 2rem;
+    padding: 30px;
+  }
+
+  .tree {
+  height: 100%;
+  width: 100%;
+  }
+}
+
+@media (max-width: 500px){
+  .about { 
+    max-width: 100vw;  
+    background: #03001C;
+    padding: 0;
+    padding-top: 80px;
+  }
+  .about-container {
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 20px;
+  }
+
+  .about-container h1 {
+    font-size:3rem;
+  }
+  
+  .h1-container {
+    width: 100%;
+  }
+}

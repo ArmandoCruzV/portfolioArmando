@@ -1,0 +1,31 @@
+/* Footer.css */
+.parallax {
+    /* Fondo de la imagen que se usará para el efecto parallax */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHsxyKkZB0w8o4TricN_KwmxSoDUP7i1GHeQ&s'); /* Cambia esta URL por la de tu imagen */
+    height: 200px; /* Altura del área del footer */
+    background-attachment: fixed; /* Fijar el fondo para el efecto parallax */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-size: cover; /* Cubrir todo el área */
+    align-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el footer */
+    color: white; /* Color del texto */
+}
+
+footer a {
+    margin: 0 15px; /* Espaciado entre los íconos */
+    color: white; /* Color de los íconos */
+    font-size: 24px; /* Tamaño de los íconos */
+    transition: color 0.3s; /* Transición suave para el hover */
+}
+
+footer a:hover {
+    color: #1da1f2; /* Color al pasar el mouse (puedes cambiarlo) */
+}

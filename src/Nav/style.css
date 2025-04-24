@@ -1,0 +1,128 @@
+nav {
+    background: linear-gradient(45deg, #1A1A2E 50%, #0B192C 80%, #000); /* Color de fondo */
+    min-height: 70px;
+    width: 100vw;
+    max-width: 100vw;
+    color: #fff; /* Color del texto */
+    display: flex; /* Alinear elementos en fila */
+    justify-content: space-between; /* Espaciado entre logo y enlaces */
+    align-items: center; /* Centrar verticalmente */
+    padding: 5px 25px; /* Espaciado interno */
+    position: fixed;
+    z-index: 999;
+}
+
+.navbar {
+    list-style: none; /* Quitar puntos de la lista */
+    display: flex; /* Alinear elementos en fila */
+    margin: 0; /* Quitar márgenes */
+    padding: 0; /* Quitar padding */
+}
+
+.navbar li {
+    margin-left: 20px; /* Espaciado entre enlaces */
+}
+
+.navbar a {
+    text-decoration: none; /* Quitar subrayado */
+    color: white; /* Color del texto */
+    transition: color 0.4s; /* Transición suave para el hover */
+}
+
+.navbar a:hover {
+    background: #A7D129;
+    border-radius: 9px;
+    padding: 5px;
+    color: black; /* Color al pasar el ratón */
+    transition: 0.4s;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none; /* Ocultar el botón por defecto */
+}
+
+.logo-icon {
+  color: white;
+  font-size: 60px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none; /* Ocultar el menú por defecto en móviles */
+        flex-direction: column; /* Alinear en columna */
+    }
+
+    .navbar.active {
+        display: flex; /* Mostrar el menú cuando está activo */
+        position: absolute;
+        right: 6px;
+        top: 6px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 9px;
+        padding: 10px;
+        background: #fafafa10;
+        backdrop-filter: blur(0.4rem);
+        animation-duration: 0.5s;
+        animation-name: active;
+    }
+  @keyframes active {
+    0%{ opacity: 0; }
+    90% { opacity: 1; }
+  }
+
+    .navbar li {
+    margin: 0;
+    padding: 10px;
+  }
+
+    .navbar a {
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+    text-shadow: #03001C 1px 0 10px;
+  }
+
+    .hamburger {
+        display: block; /* Mostrar el botón en móviles */
+        background: transparent; 
+        border: none;
+        text-align: end;
+    }
+
+    .hamburger-icon.active {
+      color: transparent;
+    }
+
+    .hamburger-icon,
+    .hamburger-icon--active {
+    color: #AD49E1;
+    width: 50px;
+    height: 30px;
+    }
+
+    .hamburger-icon--active {
+      filter: drop-shadow(1px 0 10px #B6EADA);
+      color: #E3651D;
+      animation-name: hamburger2;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes hamburger2 {
+      0% { transform: rotate(45deg);
+            color: #E3651D; }
+      90% { transform: rotate(0deg); }
+   }
+}
+
+@media (min-width: 2500px) {
+ .navbar a {
+    font-size: 50px; 
+  }
+
+  .logo-icon {
+    font-size: 100px;
+  }
+}
+
+

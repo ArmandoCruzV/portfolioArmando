@@ -1,0 +1,315 @@
+.courses {
+  max-width: auto;
+  height: 90vh;
+  padding: 20px;
+  background: white;
+  position: sticky;
+  top: 0;
+  border-radius: 12px;
+  background: rgb(219,162,244);
+  background: radial-gradient(circle, rgba(219,162,244,1) 0%, rgba(194,235,254,0.8099614845938375) 51%, rgba(174,186,251,1) 93%);
+  overflow-x: hidden;
+}
+
+.h1-courses {
+  font-size: 3rem;
+}
+
+.courses-card--container {
+  position: relative;
+  overflow-x: scroll;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+.courses-card--container::-webkit-scrollbar {
+  display: none;
+}
+
+.course-card {
+  display: flex; 
+  flex-direction: column;
+  width: 25rem;
+  height: auto;
+  background: #89A8B2;
+  padding: 10px;
+  border-radius: 9px;
+  object-fit: fill;
+}
+
+.img-card {
+  width: 20rem;
+  height: 100%; 
+  object-fit: cover;
+}
+
+.btn-course--container {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  height: 10%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonStyleLeft,
+.buttonStyleRight{
+  backgroundColor: rgba(255, 255, 255, 0.7);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  zIndex: 1;
+}
+
+/* ImageSlider.css */
+.slider-container {
+  overflow: hidden; /* Oculta el desbordamiento */
+  width: 100%; /* Ancho del contenedor */
+  position: relative; /* Posicionamiento relativo para el contenedor */
+}
+
+.slider-right {
+  display: flex; /* Usar flexbox para alinear las imágenes en fila */
+  animation: slide 20s linear infinite; /* Animación que dura 20 segundos, es lineal y se repite infinitamente */
+}
+
+.slider-left {
+  display: flex; /* Usar flexbox para alinear las imágenes en fila */
+  animation: slide-left 20s linear infinite; /* Animación que dura 20 segundos, es lineal y se repite infinitamente */
+}
+
+
+/* Definición de la animación */
+@keyframes slide {
+  0% {
+    transform: translateX(100%); /* Comienza en la posición original */
+  }
+  100% {
+    transform: translateX(-100%); /* Mueve el slider hacia la izquierda */
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(-100%); /* Comienza en la posición original */
+  }
+  100% {
+    transform: translateX(100%); /* Mueve el slider hacia la izquierda */
+  }
+}
+
+.animated-div {
+  display: flex;
+  justify-content: space-evenly;
+  height: 40vh;
+  background: #fff;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  border-radius: 22px 22px 0 0;
+  background: #2C2C2C;
+}
+
+.image-platzi,
+.image-alura {
+  width: 6rem;
+  height: 6rem;
+  padding: 0.4rem;
+  border-radius: 9px;
+  background: transparent; 
+  align-self: center;
+  transform: rotate(90deg);
+  transform: scale(0.7);
+}
+
+.platzi,
+.alura {
+  display: grid;
+  position: relative;
+  cursor: pointer;
+  width: 6rem;
+  height: 9rem;
+  background: transparent;
+  border-radius: 15% 10% 23% 20%;
+  box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.2);
+  transform:rotate(45deg);
+}
+.alura { transform:rotate(-45deg); }
+
+.platzi:before,
+.alura:before {
+  content:"";
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  border-radius: 50%;
+  background: gray;
+  filter: blur(0.5rem); 
+  top: 20%;
+  left: 0%;
+  transform:rotate(45deg);
+}
+.platzi:hover,
+.alura:hover {
+  background: green;
+  transition: 0.5s;
+  transform:rotate(0deg);
+}
+.alura:hover { background: purple; }
+
+.h3-platzi,
+.h3-alura {
+  transform: translateY(-3rem);
+}
+.platzi:hover .h3-platzi,
+.alura:hover .h3-alura {
+  transition: 0.5s; /* Transición suave para el hover */
+  transform: translateY(0);
+  z-index: 1;
+  color: white;
+}
+.platzi:hover .top-platzi,
+.platzi:hover .left-platzi,
+.platzi:hover .bottom-platzi,
+.platzi:hover .right-platzi,
+.alura:hover .top-alura,
+.alura:hover .left-alura,
+.alura:hover .bottom-alura,
+.alura:hover .right-alura {
+  transition: 0.5s; /* Transición suave para el hover */
+  transform: translateY(0);
+  z-index: 1;
+  color: white;
+  background: white;
+}
+
+.platzi:hover .image-platzi,
+.alura:hover .image-alura {
+  transition: 0.5s;
+  background: #fff;
+  transform: rotate(0deg);
+  z-index: 99;
+} 
+
+.top-platzi,
+.top-alura { 
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  bottom:50%;
+  left: 0;
+  background: tomato;
+  border-radius: 9px 9px 0 0 ;
+  transform: translateY(-3rem);
+}
+.top-alura { background: blue; }
+
+.left-platzi,
+.left-alura {
+  position: absolute;
+  width: 20%;
+  height: 60%;
+  bottom: 5%;
+  left: 0;
+  background: tomato;
+  border-radius: 9px 0px 0 9px ;
+  transform: translateX(-2rem);
+}
+.left-alura { background: blue; }
+
+.bottom-platzi,
+.bottom-alura {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  top:85%;
+  right: 0;
+  background: tomato;
+  border-radius: 0px 0px 9px 9px ; 
+  transform: translateY(2.5rem);
+}
+.bottom-alura { background: blue; }
+
+.right-platzi,
+.right-alura { 
+  position: absolute;
+  width: 20%;
+  height: 60%;
+  bottom: 5%;
+  right: 0;
+  background: tomato;
+  border-radius: 0px 9px 9px 0px ;
+  transform: translateX(2rem);
+}
+.right-alura { background: blue; }
+
+@media (min-width: 1400px) {
+.h1-courses {
+    justify-self: center;
+    font-size: 4em;
+  }
+
+.btn-course--container {
+    justify-self: center;
+    width: 60%;
+  }
+}
+
+
+@media (max-width: 668px) {
+.course-card {
+  width: 17rem;
+}
+
+.img-card {
+  width: 15rem;
+  height: 100%; 
+  object-fit: fill;
+}
+
+.platzi,
+.alura {
+  background: green;
+  transition: 0.5s;
+  transform:rotate(0deg);
+}
+.alura { background: purple; }
+
+.h3-platzi,
+.h3-alura {
+  transition: 0.5s; /* Transición suave para el hover */
+  transform: translateY(0);
+  z-index: 1;
+  color: white;
+}
+
+.top-platzi,
+.left-platzi,
+.bottom-platzi,
+.right-platzi,
+.top-alura,
+.left-alura,
+.bottom-alura,
+.right-alura {
+  transition: 0.5s; /* Transición suave para el hover */
+  transform: translateY(0);
+  z-index: 1;
+  color: white;
+  background: white;
+}
+
+.image-platzi,
+.image-alura {
+  transition: 0.5s;
+  background: #fff;
+  transform: rotate(0deg);
+  z-index: 99;
+} 
+
+}

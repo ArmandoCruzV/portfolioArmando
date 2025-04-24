@@ -1,0 +1,224 @@
+.projects {
+    background: white;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta el tamaño mínimo */
+    gap: 10px; /* Espacio entre las cajas */
+    padding: 10px; /* Espacio interno del contenedor */
+}
+
+.grid-item {
+    height: 21rem;
+    background-color: #EBE8DB; /* Color de fondo de las cajas */
+    color: white;
+    padding: 14px;
+    text-align: center;
+    border-radius: 5px; /* Bordes redondeados */
+    display: grid;
+    grid-template-rows: 15% 70% 15%;
+}
+
+.portfolio-title {
+    font-size: 4em; /* Tamaño de fuente grande */
+    color: #4CAF50; /* Color inicial */
+    text-align: center; /* Centrar el texto */
+    margin: 20px 0; /* Espaciado superior e inferior */
+    background: linear-gradient(90deg, #257180, #7E60BF); /* Degradado */
+    -webkit-background-clip: text; /* Clip del fondo para el texto */
+    -webkit-text-fill-color: transparent; /* Hacer el color del texto transparente */
+    transition: background 0.5s ease; /* Transición suave */
+}
+
+.portfolio-title:hover {
+    background: linear-gradient(70deg, #BE5985, #7A73D1); /* Degradado al hacer hover */
+    -webkit-background-clip: text; /* Clip del fondo para el texto */
+    -webkit-text-fill-color: transparent; /* Hacer el color del texto transparente */
+}
+
+.grid-item {
+    position: relative;
+    width: 300px; /* Ancho de la tarjeta */
+    border: 1px solid #ccc; /* Borde de la tarjeta */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Ocultar el desbordamiento */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    margin: 20px; /* Espaciado alrededor de la tarjeta */
+    transition: transform 0.3s; /* Transición suave */
+}
+
+.grid-item:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.container-img--card {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 15% 85%;
+}
+
+.card-img {
+    width: 100%; /* Imagen ocupa todo el ancho de la tarjeta */
+    height: 100%; /* Mantener la proporción de la imagen */
+}
+
+.description {
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: 0; /* Alinear al fondo */
+    left: 0; /* Alinear a la izquierda */
+    right: 0; /* Alinear a la derecha */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    transform: translateY(100%); /* Ocultar inicialmente */
+    transition: transform 0.3s; /* Transición suave */
+}
+
+.description.show {
+    transform: translateY(0); /* Mostrar la descripción */
+}
+
+.card-buttons {
+    width: 100%;
+    height: 100%;
+    display: flex; /* Usar flexbox para los botones */
+    justify-content: space-between; /* Espacio entre los botones */
+    padding: 5px;
+}
+
+.btn-description,
+.btn-sendPage {
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 6px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    font-weight: bold;  
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.btn-description {
+  background-color: #007BFF; /* Color de fondo */
+  color: #333; /* Color del texto */
+}
+
+.btn-description:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+.btn-sendPage {
+  background: #243642;
+  color: white;
+  text-decoration: none;
+}
+
+.container-close {
+  background: transparent;
+  border: none;
+  padding: 2px;
+  border-radius: 9px;
+  display: grid;
+  justify-self: end;
+}
+
+.close {
+  width: 2rem;
+  height: 2rem;
+  padding: 2px;
+  background: black;
+  border-radius: 9px;
+  color: tomato;
+  align-self: center;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #F6DC43;
+  transition: transform 0.4s;
+  transform: scale(1.2);
+}
+
+
+.crud,
+.dataServer,
+.encriptador,
+.router,
+.todo,
+.e-commerce,
+.landing,
+.products,
+.portafolio {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 9px;
+  object-fit: cover;
+}
+.nodeImg { width: 100%; height: auto; background: #F2E2B1; padding: 1rem; border-radius: 9px;}
+.encriptador, .portafolio { object-fit: fill; }
+
+.dataServer {
+  background: rgb(97,192,245);
+  background: radial-gradient(circle, rgba(97,192,245,1) 0%, rgba(94,223,159,1) 100%);
+}
+
+.crud {
+  background: rgb(198,233,228);
+  background: radial-gradient(circle, rgba(198,233,228,1) 0%, rgba(218,160,237,1) 100%);
+}
+
+.card-title {
+  align-content: center;
+  text-align: center;
+  background: #393053;
+  border-radius: 9px;
+}
+
+.icon-container--card {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  align-content: center;
+  gap: 1em;
+}
+
+.java-card,
+.mysql-card,
+.springBoot,
+.node-card,
+.express-card,
+.js-card,
+.html-card,
+.css-card,
+.jsx-card,
+.react-card,
+.tailwind-card,
+.tsx-card,
+.ts-card {
+  width: 90%; 
+  height: auto;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.tsx-card { color: #4F959D; background: black;}
+.ts-card { color: #27548A; background: #E4EFE7; }
+.tailwind-card { color: black; background: #C6E7FF; }
+.java-card { color: white; background: black; }
+.mysql-card { color: blue; background: #fff; border: solid 1px #182747; }
+.springBoot { color: #03C988; background: black; }
+.node-card {color: black; background: #CEDF9F;}
+.express-card { color: white; background: #006A67; }
+.js-card { color: #FADA7A; background: black; }
+.html-card { color: #F0A04B; background: black; }
+.css-card { color: #D0DDD0; background: black;}
+.react-card { color: black; background: #B3C8CF; }
+.jsx-card { color: #89A8B2; background: black;}
+
+
+@media (min-width: 2500px) {
+ .projects { padding: 0% 15% 0% 15% } 
+}

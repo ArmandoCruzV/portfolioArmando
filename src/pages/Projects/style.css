@@ -220,5 +220,15 @@
 
 
 @media (min-width: 2500px) {
- .projects { padding: 0% 15% 0% 15% } 
+  .projects { padding: 0% 15% 0% 15% } 
+}
+
+
+@media (min-width: 1400px) {
+  
+  .grid-container {
+    padding: 3rem 15% 3rem 15rem;
+  }
+
+
 }

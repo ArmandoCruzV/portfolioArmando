@@ -48,6 +48,52 @@
   height: 100%; 
   object-fit: cover;
 }
+.img-card--full {
+  width: 40rem;
+  height: auto; 
+}
+
+.modal {
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.noModal {
+  display: none;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.close {
+    display: grid;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: #B0BEC5;
+    color: #FFFFFF;
+    font-size: 3rem;
+    cursor: pointer;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+    padding: 0rem;
+    width: 3rem;
+    height: 3rem;
+}
+.close:hover {
+  background: #FF4C4C;
+  color: #FFFFFF;
+}
 
 .btn-course--container {
   margin: 1rem 0 0 0;
@@ -259,6 +305,12 @@
     justify-self: center;
     width: 60%;
   }
+
+.close {
+    top: 10%;
+    right: 30%;
+}
+
 }
 
 

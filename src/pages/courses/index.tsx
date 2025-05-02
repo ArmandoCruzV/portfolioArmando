@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import "./style.css";
 import platzi from '../../assets/platzi.png';
 import { ScrollGSAP } from '../../AnimationsSroll/index.tsx';
-import { ImgCourses } from './imgCourses';
+import { ImgCourses } from './ImgCourses';
 
 const Courses: React.FC = () => {
   const carouselRef = useRef<HTMLDivElement>(null);

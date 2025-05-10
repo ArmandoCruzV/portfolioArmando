@@ -1,8 +1,15 @@
 .parallax {
+  margin-top: -15vh;
   position: relative;
   overflow: hidden;
-  height: 100vh; /* Ajusta según sea necesario */
+  display: grid;
+  height: 120vh; /* Ajusta según sea necesario */
   background-color: #000; /* Fondo negro para simular el espacio */
+  background-image: url('../../assets/contactMe/espacio.jpg');
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+  background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+  background-position: center; /* Centra la imagen en el fondo */
   z-index: 0;
 }
 
@@ -17,32 +24,34 @@
 
 .planet {
   position: absolute;
-  width: 100px; /* Ajusta el tamaño según sea necesario */
+  width: 25rem; /* Ajusta el tamaño según sea necesario */
  /* animation: float 6s ease-in-out infinite; */
-  top: 20%;
+  bottom: -5%;
   left: 20%;
   z-index: 10;
+  
 }
 
-.planet2 {
+.luna {
   position: absolute;
   width: 100px; /* Ajusta el tamaño según sea necesario */
-  animation: float 6s ease-in-out infinite;
-  top: 50%;
-  left: 50%;
+  top: 35%;
+  left: 70%;
   z-index: 10;
 }
 
 .astronaut {
   position: absolute;
-  width: 100px; /* Ajusta el tamaño según sea necesario */
-  animation: float 8s ease-in-out infinite;
+  width: 20rem; /* Ajusta el tamaño según sea necesario */
+  animation: float 8s ease-in-out infinite; 
+  top:35%;
+  left:0%;
   z-index: 10;
 }
 
 @keyframes float {
   0% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
+  50% { transform: translateY(-30px); }
   100% { transform: translateY(0); }
 }
 
@@ -53,14 +62,9 @@ footer {
 
 /* Estilos adicionales para el footer */
 footer a {
-  margin-left: 16px; /* Margen horizontal */
-  margin-right: 16px; /* Margen horizontal */
   font-size: 24px; /* Tamaño de texto */
   transition: color 0.3s ease; /* Transición de color */
-}
-
-footer a:hover {
-  color: #3b82f6; /* Color azul al pasar el mouse */
+  align-self: center;
 }
 
 .footer {
@@ -69,7 +73,35 @@ footer a:hover {
   align-items: center; /* Centra verticalmente */
   padding: 1rem; /* Padding de 1rem (16px) en todos los lados */
   color: #FFFFFF; /* Color del texto blanco */
+  width: 35%;
+  height: 12%;
+  background: #fff;
+  align-self: center;
+  justify-self: center; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 9px;
+  padding: 10px;
+  background: #fafafa10;
+  backdrop-filter: blur(0.4rem);
 }
+
+.contactMe-tiktok,
+.contactMe-linkedin,
+.contactMe-github {
+  background: #fff;
+  border-radius: 9px;
+  padding: 5px;
+  font-size: 3rem;
+}
+
+.contactMe-tiktok:hover,
+.contactMe-linkedin:hover,
+.contactMe-github:hover {
+  background: #3E3F5B;
+}
+.contactMe-tiktok { color: #222831;}
+.contactMe-linkedin { color: #547792 ;}
+.contactMe-github { color: #FFA55D;}
 
 .link {
   margin-left: 16px; /* Margen izquierdo de 16px */

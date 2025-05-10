@@ -29,6 +29,7 @@ nav {
     transition: color 0.4s; /* Transición suave para el hover */
 }
 
+.navbar a.active,
 .navbar a:hover {
     background: #A7D129;
     border-radius: 9px;

@@ -182,7 +182,7 @@ const Skills: React.FC = () => {
   return (
     <div id="skills" className="skills">
       <div className="skills-container">
-        <h1>Skills</h1>
+        <h1 className="skills-container-h1" ><span className="skills-container-h1--1" >S</span><span className="skills-container-h1--2" >kills</span></h1>
         <TbArrowBigLeftFilled onClick={manejarClickLeft} className="arrow-left" />
         <TbArrowBigRightFilled onClick={manejarClickRight} className="arrow-right" />
         <div className="skills-circle"></div>

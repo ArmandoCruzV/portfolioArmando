@@ -95,7 +95,7 @@ const ImgCourses: React.FC = () => {
   const cardsImg = arrayImg.map((item, id) => (
     <div key={id} className="course-card">
       <img src={item} className="img-card" alt={`Course ${id + 1}`} />
-      <button onClick={() => openModal(item)}>Show Full-Size Image</button>
+      <button className="btn-course" onClick={() => openModal(item)}>Show Full-Size Image</button>
     </div>
   ));
 

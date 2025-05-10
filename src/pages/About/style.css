@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:wght@900&family=Rowdies:wght@300;400;700&display=swap');
+
 .about {
   background: white;
   padding: 20px;
@@ -29,8 +31,12 @@
   color: transparent; 
   white-space: nowrap;
   width: 12ch;
-  overflow: hidden;
-  
+  overflow: hidden; 
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+
   animation: type2 3s;
 }
 @keyframes type2 {
@@ -45,6 +51,10 @@
   white-space: nowrap;
   width: 12ch;
   overflow: hidden;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
   
   animation: type 3s;
 }

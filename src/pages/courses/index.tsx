@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import "./style.css";
 import platzi from '../../assets/platzi.png';
+import alura from '../../assets/alura.png';
 import { ScrollGSAP } from '../../AnimationsSroll/index.tsx';
 import { ImgCourses } from './ImgCourses';
 
@@ -58,7 +59,9 @@ const Courses: React.FC = () => {
   return (
     <div>
       <div id="courses" className="courses">
-        <h1 className="h1-courses" >Courses</h1>
+
+        <div className="h1-courses" ><span className="h1-courses-1" >C</span><span className="h1-courses-2" >ourses</span></div>
+        <div className="h1-courses-bg" >Courses</div>
 
         <div className="btn-course--container" >
           <button onClick={scrollLeft} className="buttonStyleLeft">❮</button>
@@ -72,6 +75,7 @@ const Courses: React.FC = () => {
       </div>
 
       <div className="animated-div" >
+
         <div className="platzi">
           <h3 className="h3-platzi">Platzi</h3>
           <div className="top-platzi"></div>
@@ -87,7 +91,7 @@ const Courses: React.FC = () => {
           <div className="bottom-alura"></div>
           <div className="left-alura"></div>
           <div className="right-alura"></div>
-          <img src={platzi} alt="Imagen 1" className="image-alura" />
+          <img src={alura} alt="Imagen 1" className="image-alura" />
         </div>
 
       </div>

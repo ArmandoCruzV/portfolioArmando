@@ -191,7 +191,7 @@ function Projects() {
     <div id="projects" className="projects">
 
       <div className="portfolio-title--container" >
-        <h1 className="portfolio-title">PROJECTS</h1>
+        <div className="portfolio-title" ><span className="portfolio-title-1" >P</span><span className="portfolio-title-2">rojects</span></div>
       </div>
 
       <div className="grid-container">
@@ -200,7 +200,7 @@ function Projects() {
             {description[index].title}
             {description[index].label}
             <div className={`description ${showDescriptions[index] ? 'show' : ''}`}>
-              <button onClick={() => toggleDescription(index)} className="container-close" ><FaWindowClose className="close" /></button>
+              <button onClick={() => toggleDescription(index)} className="container-close" ><FaWindowClose className="close-project" /></button>
               {description[index].text}
             </div>
             <div className="card-buttons">

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Playfair+Display:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Playfair+Display:ital,wght@1,900&family=Rowdies:wght@300;400;700&display=swap');
+
 .courses {
   max-width: auto;
   height: 90vh;
@@ -5,14 +8,49 @@
   background: white;
   position: sticky;
   top: 0;
-  border-radius: 12px;
+  border-radius: 30px 30px;
   background: rgb(219,162,244);
   background: radial-gradient(circle, rgba(219,162,244,1) 0%, rgba(194,235,254,0.8099614845938375) 51%, rgba(174,186,251,1) 93%);
   overflow-x: hidden;
 }
 
 .h1-courses {
-  font-size: 3rem;
+  justify-self: center;
+}
+
+.h1-courses-1 {
+  font-size: 5rem;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #143D60;
+  color: #F38C79;
+}
+.h1-courses-2 {
+  font-size: 4rem;
+  font-family: "Alfa Slab One", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  color: #E5E3D4;
+}
+.h1-courses-bg {
+  top: 10%; 
+  left: 0%;
+  position: absolute;
+  font-size: 10rem;
+  font-family: "Alfa Slab One", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #C5BAFF;
+  color: transparent;
+  z-index: -1;
 }
 
 .courses-card--container {
@@ -26,8 +64,23 @@
   height: auto;
   padding: 10px;
   gap: 10px;
-  margin-bottom: 1rem;
 }
+
+.btn-course {
+  height: 2rem;
+  color: white;
+  font-weight: bolder;
+  background: linear-gradient(45deg, #27548A, #393E46);
+  border: none;
+  margin: 4px;
+  margin-top: 1rem;
+  border-radius: 9px;
+  cursor: pointer;
+}
+.btn-course:hover {
+  background: linear-gradient(45deg, #3B6790, #EFB036); 
+}
+
 .courses-card--container::-webkit-scrollbar {
   display: none;
 }
@@ -106,11 +159,25 @@
 
 .buttonStyleLeft,
 .buttonStyleRight{
-  backgroundColor: rgba(255, 255, 255, 0.7);
+  display: grid;
+  background: linear-gradient(to top, #102E50, #077A7D);
+  text-align: center;
+  align-self: center; 
+  align-content: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bolder;
   border: none;
   cursor: pointer;
   padding: 10px;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9px;
   zIndex: 1;
+}
+.buttonStyleLeft:hover,
+.buttonStyleRight:hover{
+  background: linear-gradient(45deg, #3B6790, #EFB036); 
 }
 
 /* ImageSlider.css */
@@ -157,9 +224,9 @@
   background: #fff;
   align-items: center;
   position: sticky;
-  top: 0;
-  border-radius: 22px 22px 0 0;
-  background: #2C2C2C;
+  border-radius: 30px 30px 0 0;
+  background: linear-gradient(to bottom, #2C2C2C 70%, transparent 100%);
+  z-index: 8;
 }
 
 .image-platzi,
@@ -172,6 +239,11 @@
   align-self: center;
   transform: rotate(90deg);
   transform: scale(0.7);
+}
+.image-alura {
+  border-radius: 1rem;
+  width: 6.5 rem;
+  height: 6.5rem;
 }
 
 .platzi,

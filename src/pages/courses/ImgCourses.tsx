@@ -94,7 +94,7 @@ const ImgCourses: React.FC = () => {
 
   const cardsImg = arrayImg.map((item, id) => (
     <div key={id} className="course-card">
-      <img src={item} className="img-card" alt={`Course ${id + 1}`} />
+      <img src={item} className="img-card" alt={`Course ${id + 1}`} loading="lazy" />
       <button className="btn-course" onClick={() => openModal(item)}>Show Full-Size Image</button>
     </div>
   ));
@@ -105,7 +105,7 @@ const ImgCourses: React.FC = () => {
       {isOpen && (
         <div className="modal">
           <span className="close" onClick={closeModal}>&times;</span>
-          {selectedImage && <img src={selectedImage} className="img-card--full" alt="Full Size" />}
+          {selectedImage && <img src={selectedImage} className="img-card--full" alt="Full Size" loading="lazy" />}
         </div>
       )}
     </>

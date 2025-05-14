@@ -72,7 +72,7 @@ const About: React.FC = () => {
     <div id='about' className='about'>
       <div className='about-container' ref={componentRef} >
         <div>
-          <img src={Onepiece} className='img-profile' />
+          <img src={Onepiece} className='img-profile' loading="lazy" />
           <div className='h1-container' >
             <h1 className={className}>Armando CV </h1>
           </div>

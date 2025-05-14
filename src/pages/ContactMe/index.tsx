@@ -10,17 +10,17 @@ const socialLinks = [
   {
     id: 1,
     icon: <FaTiktok className='contactMe-tiktok' />,
-    url: "https://www.tiktok.com/@yourusername",
+    url: "https://www.tiktok.com/@haok2d",
   },
   {
     id: 2,
     icon: <FaLinkedin className='contactMe-linkedin' />,
-    url: "https://www.linkedin.com/in/yourusername/",
+    url: "https://www.linkedin.com/in/armando-cruz-2a5897236/",
   },
   {
     id: 3,
     icon: <FaGithub className='contactMe-github' />,
-    url: "https://github.com/yourusername",
+    url: "https://github.com/ArmandoCruzV",
   },
 ];
 
@@ -36,9 +36,9 @@ const ContactMe: React.FC = () => {
   return (
     <div id='contacto' className="parallax">
       <div className="background">
-        <img src={luna} className="luna" alt="Planet 1" />
-        <img src={tierra} className="planet" alt="Planet 2" />
-        <img src={astronauta} className="astronaut" alt="Astronaut" />
+        <img src={luna} className="luna" alt="Planet 1" loading="lazy" />
+        <img src={tierra} className="planet" alt="Planet 2" loading="lazy" />
+        <img src={astronauta} className="astronaut" alt="Astronaut" loading="lazy" />
       </div>
       <footer className="footer">
         {socialLinks.map((link) => (

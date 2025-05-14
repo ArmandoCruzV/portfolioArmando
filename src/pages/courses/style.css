@@ -257,6 +257,7 @@
   border-radius: 15% 10% 23% 20%;
   box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.2);
   transform:rotate(45deg);
+  text-decoration: none;
 }
 .alura { transform:rotate(-45deg); }
 
@@ -404,9 +405,8 @@
   transform:rotate(0deg);
 }
 .alura { background: purple; }
-
 .h3-platzi,
-.h3-alura {
+.h3-alura { 
   transition: 0.5s; /* Transición suave para el hover */
   transform: translateY(0);
   z-index: 1;

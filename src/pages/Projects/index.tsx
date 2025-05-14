@@ -27,9 +27,11 @@ import { useState } from 'react';
 import './style.css';
 import { ScrollGSAP } from '../../AnimationsSroll/index.tsx';
 
+import Tux3D from '../../assets/world.tsx'
+
 function Projects() {
 
-  ScrollGSAP(".grid-container", 0, 50);
+  ScrollGSAP(".grid-container", 0, 50, 'top 100%', 'top 50%');
   ScrollGSAP(".portfolio-title--container", 0, -50);
 
   const [showDescriptions, setShowDescriptions] = useState(Array(5).fill(false));
@@ -53,7 +55,7 @@ function Projects() {
           <FaReact className="react-card" />
           <FaCss3Alt className="css-card" />
         </div>
-        <div className="card-img" ><img src={products} className='products' /></div>
+        <div className="card-img" ><img src={products} className='products' loading="lazy" /></div>
       </div>,
       text: "Este proyecto es una aplicación web interactiva desarrollada utilizando TypeScript, React y CSS, diseñada para ofrecer una experiencia de usuario fluida y atractiva. La aplicación se centra en  mostrar un negocio y sus productos y servicios, permitiendo a los usuarios explorar fácilmente la información disponible.",
       url: "https://omarmantenimiento.netlify.app/",
@@ -67,7 +69,7 @@ function Projects() {
           <FaReact className="react-card" />
           <FaCss3Alt className="css-card" />
         </div>
-        <div className="card-img" ><img src={portafolio} className='portafolio' /></div>
+        <div className="card-img" ><img src={portafolio} className='portafolio' loading="lazy" /></div>
       </div>,
       text: "Este proyecto es un portafolio personal diseñado para mostrar mis habilidades y proyectos como programador frontend. Desarrollado con TypeScript, React y CSS, este portafolio no solo resalta mis capacidades técnicas, sino que también proporciona una experiencia de usuario atractiva y fluida.",
       url: "https://armandocruzv.github.io/portafolio/",
@@ -80,7 +82,7 @@ function Projects() {
           <FaReact className="react-card" />
           <FaCss3Alt className="css-card" />
         </div>
-        <div className="card-img" ><img src={todo} className='todo' /></div>
+        <div className="card-img" ><img src={todo} className='todo' loading="lazy" /></div>
       </div>,
       text: "Este proyecto se enfoca en desarrollar una aplicación de lista de tareas (to-do) utilizando React.js. La aplicación permite a los usuarios agregar nuevas tareas, eliminar tareas existentes y marcarlas como completadas. Con una interfaz intuitiva y responsiva para gestionar las tareas diarias de manera sencilla.",
       url: "https://armandocruzv.github.io/todo_list/",
@@ -93,7 +95,7 @@ function Projects() {
           <FaReact className="react-card" />
           <FaCss3Alt className="css-card" />
         </div>
-        <div className="card-img" ><img src={router} className='router' /></div>
+        <div className="card-img" ><img src={router} className='router' loading="lazy" /></div>
       </div>,
       text: "Este proyecto desarrolla un blog utilizando React.js y React Router DOM para una navegación fluida. Se implementan medidas de seguridad con Node.js para manejar endpoints, junto con autenticación de usuarios, roles y permisos, asegurando que solo los usuarios autorizados puedan realizar ciertas acciones.",
       url: "https://armandocruzv.github.io/React-router-navegacion/",
@@ -119,7 +121,7 @@ function Projects() {
           <FaReact className="react-card" />
           <FaCss3Alt className="css-card" />
         </div>
-        <div className="card-img" ><img src={landing} className='landing' /></div>
+        <div className="card-img" ><img src={landing} className='landing' loading="lazy" /></div>
       </div>,
       text: "Este proyecto desarrolla una aplicación web para una empresa de cuchillas y molinos para la industria del plástico, usando React.js y React Router DOM. La aplicación permite explorar productos, obtener información detallada y contactar con el equipo comercial, ofreciendo una navegación fluida y una interfaz moderna.",
       url: "https://elegant-sunshine-437c40.netlify.app/nosotros",
@@ -132,7 +134,7 @@ function Projects() {
           <FaReact className="react-card" />
           <RiTailwindCssFill className="tailwind-card" />
         </div>
-        <div className="card-img" ><img src={commerce} className='e-commerce' /></div>
+        <div className="card-img" ><img src={commerce} className='e-commerce' loading="lazy" /></div>
       </div>,
       text: "Este proyecto desarrolla una tienda en línea (e-commerce) utilizando React.js, que se conecta a una API de productos para mostrar y gestionar inventario. La aplicación permite a los usuarios explorar productos, agregar artículos al carrito y realizar compras, ofreciendo una experiencia de compra fluida y moderna.",
       url: "https://armandocruzv.github.io/react-shop/",
@@ -145,7 +147,7 @@ function Projects() {
           <TbBrandMysql className="mysql-card" />
           <SiSpringboot className="springBoot" />
         </div>
-        <div className="card-img" ><img src={Crud} className='crud' /></div>
+        <div className="card-img" ><img src={Crud} className='crud' loading="lazy" /></div>
       </div>,
       text: "Este proyecto consiste en el desarrollo de una aplicación CRUD (Crear, Leer, Actualizar, Eliminar) utilizando Java y Spring Boot. La aplicacíon se conecta a una base de datos MySQL, la cual fue diseñada y configurada especificamente para este proyecto.",
       url: "https://github.com/ArmandoCruzV/crudExample/tree/main/src/main/java/com/api/crudExample",
@@ -157,7 +159,7 @@ function Projects() {
           <FaJava className="java-card" />
           <TbBrandMysql className="mysql-card" />
         </div>
-        <div className="card-img" ><img src={dataServer} className='dataServer' /></div>
+        <div className="card-img" ><img src={dataServer} className='dataServer' loading="lazy" /></div>
       </div>,
       text: "Este proyecto se centra en el desarrollo de una aplicación CRUD (Crear, Leer, Actualizar, Eliminar) utilizando Java y consultas SQL directas para interactuar con una base de datos MySQL. La base de datos fue diseñada y creada manualmente para satisfacer las necesidades específicas del proyecto.",
       url: "https://github.com/ArmandoCruzV/mensajes-app-java/tree/master/src/main/java",
@@ -168,7 +170,7 @@ function Projects() {
         <div className="icon-container--card" >
           <FaJava className="java-card" />
         </div>
-        <div className="card-img" ><img src={javaImg} className='dataServer' /></div>
+        <div className="card-img" ><img src={javaImg} className='dataServer' loading="lazy" /></div>
       </div>,
       text: "Este proyecto consiste en el desarrollo de un sistema de gestión de citas médicas utilizando Java. El objetivo es facilitar la programación, seguimiento y gestión de citas entre pacientes y profesionales de la salud.",
       url: "https://github.com/ArmandoCruzV/MyMedicalAppointments/tree/main/src",
@@ -180,7 +182,7 @@ function Projects() {
           <FaNodeJs className="node-card" />
           <SiExpress className="express-card" />
         </div>
-        <div className="card-img" ><img src={nodeImg} className='nodeImg' /></div>
+        <div className="card-img" ><img src={nodeImg} className='nodeImg' loading="lazy" /></div>
       </div>,
       text: "Este proyecto se enfoca en el desarrollo de una aplicación CRUD (Crear, Leer, Actualizar, Eliminar) utilizando Node.js y el framework Express. El objetivo es construir una API RESTful que permita gestionar datos de manera eficiente a través de operaciones básicas sobre una base de datos.",
       url: "https://github.com/ArmandoCruzV/nodeProject",
@@ -190,8 +192,12 @@ function Projects() {
   return (
     <div id="projects" className="projects">
 
+      <Tux3D />
+
       <div className="portfolio-title--container" >
         <div className="portfolio-title" ><span className="portfolio-title-1" >P</span><span className="portfolio-title-2">rojects</span></div>
+        <h2 className="portfolio-h2" >Recent projects</h2>
+        <h3 className="portfolio-h3" >showcasing some of my best work</h3>
       </div>
 
       <div className="grid-container">

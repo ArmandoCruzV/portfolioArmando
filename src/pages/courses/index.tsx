@@ -76,23 +76,23 @@ const Courses: React.FC = () => {
 
       <div className="animated-div" >
 
-        <div className="platzi">
+        <a className="platzi" href="https://platzi.com/p/hao_2-d364/" target="_blank" >
           <h3 className="h3-platzi">Platzi</h3>
           <div className="top-platzi"></div>
           <div className="bottom-platzi"></div>
           <div className="left-platzi"></div>
           <div className="right-platzi"></div>
-          <img src={platzi} alt="Imagen 1" className="image-platzi" />
-        </div>
+          <img src={platzi} alt="Imagen 1" className="image-platzi" loading="lazy" />
+        </a>
 
-        <div className="alura">
+        <a className="alura" href="https://app.aluracursos.com/user/hao-2-d/fullCertificate/88f128d66f368013cc3fb3d4987fc2c1" target="_blank" >
           <h3 className="h3-alura">Alura</h3>
           <div className="top-alura"></div>
           <div className="bottom-alura"></div>
           <div className="left-alura"></div>
           <div className="right-alura"></div>
-          <img src={alura} alt="Imagen 1" className="image-alura" />
-        </div>
+          <img src={alura} alt="Imagen 1" className="image-alura" loading="lazy" />
+        </a>
 
       </div>
 

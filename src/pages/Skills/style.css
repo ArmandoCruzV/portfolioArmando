@@ -4,6 +4,7 @@
   max-width: 100vw;
   overflow: hidden;
   border-radius: 12px;
+  margin-top: 1rem;
 }
 
 .skills-container {
@@ -271,6 +272,28 @@
 .archlinux { color: #2973B2; }
 .bash { color: white; }
 .ts { color: #7886C7 }
+
+@media (max-width: 800px) {
+.skills {
+    height: 100vh;
+}
+
+.skills-container {
+  height: 100vh;
+}
+
+
+.skills-container-h1 {
+  padding: 0;
+}
+
+.skills-cards {
+    width: 90vw;
+    height: 70vh;
+    justify-self: center;
+    align-self: center;
+  }
+}
 
 @media (min-width: 1400px) {
 .arrow-left,

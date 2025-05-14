@@ -2,20 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:wght@900&family=Rowdies:wght@300;400;700&display=swap');
 
 .projects {
-    max-width: 100vw;
+    margin: 2rem 0 2rem 0;
+    max-width: calc(100vw + 4rem);
     overflow-x: hidden;
     padding-top: 3rem;
+    padding-bottom: 2rem;
     border-radius: 30px 30px;
-    background: linear-gradient(45deg,white 83%, #00aaffaa 50% );
+    position: relative;
+    background: linear-gradient(to bottom, #e0f2fe, #cfe0f9);
+    color: #1e293b;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta el tamaño mínimo */
-    gap: 10px; /* Espacio entre las cajas */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta el tamaño mínimo */
+    gap: 1.5rem;
     padding: 10px; /* Espacio interno del contenedor */
     border-radius: 30px 30px;  
-    background: #2A4759;
+    justify-items: center;
 }
 
 .grid-item {
@@ -29,8 +33,13 @@
     grid-template-rows: 15% 70% 15%;
 }
 
+.portfolio-title--container {
+  margin-bottom: 5rem;
+}
+
 .portfolio-title {
     text-align: center; /* Centrar el texto */
+    margin-right: 6em;
 }
 .portfolio-title-1 {
     font-size: 5.5em; /* Tamaño de fuente grande */
@@ -70,15 +79,28 @@
     -webkit-text-fill-color: transparent; /* Hacer el color del texto transparente */
 }
 
+.portfolio-h2,
+.portfolio-h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  background: transparente;
+  color: #2A4759;
+  text-align: center;
+  margin-right: 6rem;
+}
+
+.portfolio-h3 { font-size: 1.2rem;}
+
 .grid-item {
     position: relative;
     width: 300px; /* Ancho de la tarjeta */
     border: 1px solid #ccc; /* Borde de la tarjeta */
-    border-radius: 10px; /* Bordes redondeados */
+    border-radius: 1rem; /* Bordes redondeados */
     overflow: hidden; /* Ocultar el desbordamiento */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-    margin: 20px; /* Espaciado alrededor de la tarjeta */
+    padding: 1.5rem;
     transition: transform 0.3s; /* Transición suave */
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .grid-item:hover {
@@ -92,8 +114,11 @@
 }
 
 .card-img {
-    width: 100%; /* Imagen ocupa todo el ancho de la tarjeta */
-    height: 100%; /* Mantener la proporción de la imagen */
+    width: 90%; /* Imagen ocupa todo el ancho de la tarjeta */
+    height: 90%; /* Mantener la proporción de la imagen */
+    justify-self: center;
+    align-self: center;
+    align-content: center;
 }
 
 .description {
@@ -101,11 +126,13 @@
     bottom: 0; /* Alinear al fondo */
     left: 0; /* Alinear a la izquierda */
     right: 0; /* Alinear a la derecha */
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    backdrop-filter: blur(10px);
     color: white; /* Color del texto */
     padding: 10px; /* Espaciado interno */
     transform: translateY(100%); /* Ocultar inicialmente */
     transition: transform 0.3s; /* Transición suave */
+    border-radius: 1rem 1rem 0rem 0rem;
 }
 
 .description.show {
@@ -117,21 +144,24 @@
     height: 100%;
     display: flex; /* Usar flexbox para los botones */
     justify-content: space-between; /* Espacio entre los botones */
-    padding: 5px;
+    gap: 1rem; 
+    padding-top: 1rem;
 }
 
 .btn-description,
 .btn-sendPage {
     border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    padding: 6px; /* Espaciado interno */
     cursor: pointer; /* Cambia el cursor al pasar el mouse */
     font-weight: bold;  
-    transition: background-color 0.3s; /* Transición suave */
+    transition: background-color 0.3s; /* Transición suave */   
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;   
+    text-align: center;
+    align-self: center;
 }
 
 .btn-description {
-  background-color: #007BFF; /* Color de fondo */
+  background-color: #93c5fd; /* Color de fondo */
   color: #333; /* Color del texto */
 }
 
@@ -144,6 +174,11 @@
   background: #243642;
   color: white;
   text-decoration: none;
+}
+
+.btn-sendPage:hover {
+  background: #94B4C1; /* Color de fondo al pasar el mouse */
+  color: black;
 }
 
 .container-close {
@@ -172,7 +207,6 @@
   transform: scale(1.2);
 }
 
-
 .crud,
 .dataServer,
 .encriptador,
@@ -182,13 +216,16 @@
 .landing,
 .products,
 .portafolio {
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  border-radius: 9px;
+  width: 10em;
+  height: 10em;
+  padding: 0px;
+  border-radius: 50%;
   object-fit: cover;
+  justify-self: center;
+  align-self: center;
+  border: 1px solid #9FB3DF;
 }
-.nodeImg { width: 100%; height: auto; background: #F2E2B1; padding: 1rem; border-radius: 9px;}
+.nodeImg { width: 10em; height: 10em; background: #F2E2B1; padding: 1rem; border-radius: 50%; object-fit: cover;}
 .encriptador, .portafolio { object-fit: fill; }
 
 .dataServer {
@@ -204,21 +241,24 @@
 .card-title {
   align-content: center;
   text-align: center;
-  background: #393053;
-  border-radius: 9px;
+  background: #9FB3DF;
+  border-radius: 0.5rem;
+  color: black;
+  font-weight: bold;
 
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  font-weight: 900;
   font-style: normal;
 }
 
 .icon-container--card {
   display: grid;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   justify-items: center;
   align-content: center;
+  justify-self: center;
+  align-self: center;
   gap: 1em;
 }
 
@@ -257,9 +297,26 @@
 
 
 @media (max-width: 800px) {
-.projects {
-    background: linear-gradient(45deg,white 86%, #00aaffaa 50% );
+.grid-container {
+    grid-template-columns: repeat(250px); /* Ajusta el tamaño mínimo */
+    
 }
+
+.grid-item {
+  width: 250px;  
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+}
+
+.btn-sendPage,
+.btn-description {
+  border-radius: 1rem;
+  font-size: 0.8rem;
+}
+
 }
 
 @media (min-width: 2500px) {
@@ -267,10 +324,6 @@
 }
 
 
-@media (min-width: 1400px) {
-  .grid-container {
-    padding: 3rem 15% 3rem 15rem;
-  
-    background: linear-gradient(45deg,white 66%, #00aaffaa 50% );
-  }
+@media (min-width: 700px) {
+  .projects { padding: 0% 10% 0% 10%; } 
 }

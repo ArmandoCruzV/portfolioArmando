@@ -438,7 +438,7 @@ p {
   }
 }
 
-@media (max-width: 500px){
+@media (max-width: 800px){
   .about { 
     max-width: 100vw;  
     background: #03001C;

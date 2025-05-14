@@ -36,7 +36,7 @@ function Projects() {
 
   const [showDescriptions, setShowDescriptions] = useState(Array(5).fill(false));
 
-  const toggleDescription = (index) => {
+  const toggleDescription = (index: number) => {
     // Crea una copia del estado actual
     const newShowDescriptions = [...showDescriptions];
     // Cambia el estado del índice correspondiente

@@ -31,6 +31,8 @@ const Tux3D: React.FC = () => {
     controls.minDistance = 2;
     controls.maxDistance = 8;
     controls.maxPolarAngle = Math.PI / 1.8;
+    // Disable zoom functionality
+    controls.enableZoom = false;
 
     // Lights
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
@@ -185,6 +187,7 @@ const Tux3D: React.FC = () => {
         position: 'absolute',
         top: 0,
         left: 90,
+        cursor: 'grab',
       }}
     />
   );

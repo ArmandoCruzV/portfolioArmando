@@ -1,15 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Playfair+Display:ital,wght@1,900&family=Rowdies:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:wght@900&family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 .projects {
-    margin: 2rem 0 2rem 0;
     max-width: calc(100vw + 4rem);
     overflow-x: hidden;
     padding-top: 3rem;
     padding-bottom: 2rem;
-    border-radius: 30px 30px;
     position: relative;
-    background: linear-gradient(to bottom, #e0f2fe, #cfe0f9);
+    background: #e0f2fe;
     color: #1e293b;
 }
 
@@ -23,8 +20,7 @@
 }
 
 .grid-item {
-    height: 21rem;
-    background-color: #EBE8DB; /* Color de fondo de las cajas */
+    height: auto;
     color: white;
     padding: 14px;
     text-align: center;
@@ -34,7 +30,7 @@
 }
 
 .portfolio-title--container {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 .portfolio-title {
@@ -45,11 +41,12 @@
     font-size: 5.5em; /* Tamaño de fuente grande */
     color: #4CAF50; /* Color inicial */
     margin: 20px 0; /* Espaciado superior e inferior */
-    background: linear-gradient(to top, blue, pink);
+    background: linear-gradient(to top, blue, pink); 
+    font-weight: bold;
 
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-    font-weight: 900;
+    font-weight: <weight>;
     font-style: normal;
 
     -webkit-background-clip: text; /* Clip del fondo para el texto */
@@ -57,15 +54,15 @@
     transition: background 0.5s ease; /* Transición suave */
 }
 .portfolio-title-2 {
-    font-size: 3em; /* Tamaño de fuente grande */
+    font-size: 4em; /* Tamaño de fuente grande */
     color: #4CAF50; /* Color inicial */
     margin: 20px 0; /* Espaciado superior e inferior */
     background: linear-gradient(90deg, #257180, #7E60BF); /* Degradado */
-
-  font-family: "Alfa Slab One", serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 
     -webkit-background-clip: text; /* Clip del fondo para el texto */
     -webkit-text-fill-color: transparent; /* Hacer el color del texto transparente */
@@ -87,20 +84,33 @@
   color: #2A4759;
   text-align: center;
   margin-right: 6rem;
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  }
+.portfolio-h2 {
+  background: linear-gradient(45deg, #2A4759 50%, #AEEA94);
+    -webkit-background-clip: text; /* Clip del fondo para el texto */
+    -webkit-text-fill-color: transparent; /* Hacer el color del texto transparente */
 }
 
 .portfolio-h3 { font-size: 1.2rem;}
 
 .grid-item {
+    display: flex;
+    flex-direction: column;
     position: relative;
-    width: 300px; /* Ancho de la tarjeta */
+    height: auto;
+    width: 250px; /* Ancho de la tarjeta */
     border: 1px solid #ccc; /* Borde de la tarjeta */
     border-radius: 1rem; /* Bordes redondeados */
     overflow: hidden; /* Ocultar el desbordamiento */
-    padding: 1.5rem;
+    background: #fff;  
     transition: transform 0.3s; /* Transición suave */
-    background: #ffffff;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 0; 
 }
 
 .grid-item:hover {
@@ -109,16 +119,19 @@
 
 .container-img--card {
   display: grid;
-  grid-template-rows: 100%;
-  grid-template-columns: 15% 85%;
+  grid-template-columns: 100%;
 }
 
-.card-img {
-    width: 90%; /* Imagen ocupa todo el ancho de la tarjeta */
-    height: 90%; /* Mantener la proporción de la imagen */
-    justify-self: center;
-    align-self: center;
-    align-content: center;
+.card-title-h3 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-style: normal;
+  align-content: center;
+  text-align: center;
+  color: black;
+  margin-top: 1rem;
 }
 
 .description {
@@ -133,6 +146,12 @@
     transform: translateY(100%); /* Ocultar inicialmente */
     transition: transform 0.3s; /* Transición suave */
     border-radius: 1rem 1rem 0rem 0rem;
+     
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 .description.show {
@@ -140,12 +159,15 @@
 }
 
 .card-buttons {
-    width: 100%;
+    width: auto;
     height: 100%;
     display: flex; /* Usar flexbox para los botones */
     justify-content: space-between; /* Espacio entre los botones */
+    align-self: center;
     gap: 1rem; 
-    padding-top: 1rem;
+    padding: 1rem 0 1rem 0;
+    border-top: solid 1px black;
+    margin: 0rem 1rem 0 1rem;    
 }
 
 .btn-description,
@@ -154,10 +176,13 @@
     cursor: pointer; /* Cambia el cursor al pasar el mouse */
     font-weight: bold;  
     transition: background-color 0.3s; /* Transición suave */   
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     border-radius: 9999px;   
     text-align: center;
     align-self: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .btn-description {
@@ -207,6 +232,15 @@
   transform: scale(1.2);
 }
 
+.card-img {
+  margin-top: 1rem; 
+  width: 100%; /* Imagen ocupa todo el ancho de la tarjeta */
+  height: 100%; /* Mantener la proporción de la imagen */
+  justify-self: center;
+  align-self: center;
+  align-content: center;
+}
+
 .crud,
 .dataServer,
 .encriptador,
@@ -216,15 +250,25 @@
 .landing,
 .products,
 .portafolio {
-  width: 10em;
-  height: 10em;
-  padding: 0px;
-  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
   object-fit: cover;
   justify-self: center;
   align-self: center;
-  border: 1px solid #9FB3DF;
+  border-radius: 50%; 
+  box-shadow: rgba(50, 50, 93, 0.25) 10px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+
+.previousText {
+  margin: 1rem;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size: 1.25rem;
+}
+
 .nodeImg { width: 10em; height: 10em; background: #F2E2B1; padding: 1rem; border-radius: 50%; object-fit: cover;}
 .encriptador, .portafolio { object-fit: fill; }
 
@@ -238,28 +282,27 @@
   background: radial-gradient(circle, rgba(198,233,228,1) 0%, rgba(218,160,237,1) 100%);
 }
 
-.card-title {
-  align-content: center;
-  text-align: center;
-  background: #9FB3DF;
-  border-radius: 0.5rem;
-  color: black;
-  font-weight: bold;
-
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
 .icon-container--card {
   display: grid;
-  width: 90%;
-  height: 90%;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); 
   justify-items: center;
   align-content: center;
   justify-self: center;
   align-self: center;
-  gap: 1em;
+  width: 100%;
+  height: 100%;
+}
+.icon-container--card > li {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  width: 100%; 
+  justify-self: center;
+  text-align: center;
+}
+.span-cards {
+  font-weight: bolder;
+  color: black;
+  margin: 0.25rem 0 0.65rem 0;
 }
 
 .java-card,
@@ -275,35 +318,20 @@
 .tailwind-card,
 .tsx-card,
 .ts-card {
-  width: 90%; 
+  justify-self: center;
+  width: 2rem;
   height: auto;
-  border-radius: 50%;
   padding: 2px;
+  color: black;
 }
 
-.tsx-card { color: #4F959D; background: black;}
-.ts-card { color: #27548A; background: #E4EFE7; }
-.tailwind-card { color: black; background: #C6E7FF; }
-.java-card { color: white; background: black; }
-.mysql-card { color: blue; background: #fff; border: solid 1px #182747; }
-.springBoot { color: #03C988; background: black; }
-.node-card {color: black; background: #CEDF9F;}
-.express-card { color: white; background: #006A67; }
-.js-card { color: #FADA7A; background: black; }
-.html-card { color: #F0A04B; background: black; }
-.css-card { color: #D0DDD0; background: black;}
-.react-card { color: black; background: #B3C8CF; }
-.jsx-card { color: #89A8B2; background: black;}
-
-
-@media (max-width: 800px) {
+@media (max-width: 800px) { 
 .grid-container {
-    grid-template-columns: repeat(250px); /* Ajusta el tamaño mínimo */
-    
+    grid-template-columns: repeat(250px); /* Ajusta el tamaño mínimo */   
 }
 
 .grid-item {
-  width: 250px;  
+  width: 300px;  
   margin-bottom: 1rem;
 }
 
@@ -317,6 +345,12 @@
   font-size: 0.8rem;
 }
 
+.portfolio-title--container {
+  margin-top: 4em;
+  padding: 1rem;
+
+}
+
 }
 
 @media (min-width: 2500px) {
@@ -324,6 +358,10 @@
 }
 
 
-@media (min-width: 700px) {
-  .projects { padding: 0% 10% 0% 10%; } 
+@media (max-width: 700px) {
+  .portfolio-h2,
+  .portfolio-h3 {
+  margin-right: 3rem;
+  }
+
 }

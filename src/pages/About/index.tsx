@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Onepiece from '../../assets/onepiece.jpg';
+import { AnimateOnScroll } from '../../AnimationsSroll/AnimateOnScroll.tsx';
 import './style.css'
 
 const About: React.FC = () => {
@@ -10,28 +11,45 @@ const About: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Función para manejar el movimiento del cursor
-    const handleMouseMove = (event: MouseEvent) => {
-      setPosition({ x: event.clientX, y: event.clientY });
+    // Función común para actualizar la posición basada en clientX y clientY
+    const actualizarPosicion = (clientX: number, clientY: number) => {
+      if (!containerRef.current) return;
 
-      if (containerRef.current) {
-        const container = containerRef.current.getBoundingClientRect();
+      const container = containerRef.current.getBoundingClientRect();
 
-        const x = Math.max(30, Math.min(event.clientX - container.left - 120, container.width));
-        const y = Math.max(100, Math.min(event.clientY - container.top, container.height));
+      // Limitar las posiciones según restricciones (igual que el original)
+      const x = Math.max(30, Math.min(clientX - container.left - 120, container.width));
+      const y = Math.max(100, Math.min(clientY - container.top, container.height));
 
-        setPosition({ x, y });
+      setPosition({ x, y });
+    };
+
+    // Manejador para movimiento de mouse
+    const manejadorMouseMove = (event: MouseEvent) => {
+      actualizarPosicion(event.clientX, event.clientY);
+    };
+
+    // Manejador para movimiento táctil (touchmove)
+    const manejadorTouchMove = (event: TouchEvent) => {
+      if (event.touches.length > 0) {
+        const touch = event.touches[0];
+        actualizarPosicion(touch.clientX, touch.clientY);
+        // Prevenir el comportamiento por defecto para evitar que la página haga scroll mientras se arrastra
+        event.preventDefault();
       }
     };
 
-    // Añadir el listener al evento mousemove
-    window.addEventListener('mousemove', handleMouseMove);
+    // Añadir los event listeners para mouse y touch
+    window.addEventListener('mousemove', manejadorMouseMove);
+    window.addEventListener('touchmove', manejadorTouchMove, { passive: false });
 
-    // Limpiar el listener cuando el componente se desmonte
+    // Limpiar los listeners cuando el componente se desmonte
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mousemove', manejadorMouseMove);
+      window.removeEventListener('touchmove', manejadorTouchMove);
     };
-  }, []); // Solo se ejecuta una vez, cuando el componente se monta
+  }, []);
+
 
   const styles = {
     //right: `${position.x}px`,
@@ -72,11 +90,17 @@ const About: React.FC = () => {
     <div id='about' className='about'>
       <div className='about-container' ref={componentRef} >
         <div>
-          <img src={Onepiece} className='img-profile' loading="lazy" />
+
+          <div className='img-profile--container'>
+            <img src={Onepiece} className='img-profile' loading="lazy" />
+          </div>
+
           <div className='h1-container' >
             <h1 className={className}>Armando CV </h1>
           </div>
-          <h3>Full-Stack</h3>
+          <AnimateOnScroll>
+            <h3>Full-Stack</h3>
+          </AnimateOnScroll>
           <p>
             I am a passionate full-stack developer who enjoys tackling complex challenges that require both creativity and an analytical approach. My innate curiosity and desire to learn drive me to constantly explore new technologies and methodologies, allowing me to stay at the forefront of a constantly evolving field.<br />
             <br />

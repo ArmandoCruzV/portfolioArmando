@@ -53,15 +53,18 @@ const Courses: React.FC = () => {
   }, []);
 
   //animacion al hacer scoll
-  ScrollGSAP(".courses", 50, 0, 'top 90%', 'top 40%');
+  ScrollGSAP(".h1-courses", 50, 0, 'top 80%', 'top 30%');
 
 
   return (
     <div>
       <div id="courses" className="courses">
 
-        <div className="h1-courses" ><span className="h1-courses-1" >C</span><span className="h1-courses-2" >ourses</span></div>
-        <div className="h1-courses-bg" >Courses</div>
+        <div>
+          <div className="h1-courses" ><span className="h1-courses-1" >C</span><span className="h1-courses-2" >ourses</span></div>
+          <h2 className="skills-container-h2">My Learning Journey</h2>
+          <h3 className="skills-container-h3">Courses I've completed to grow my skills</h3>
+        </div>
 
         <div className="btn-course--container" >
           <button onClick={scrollLeft} className="buttonStyleLeft">❮</button>

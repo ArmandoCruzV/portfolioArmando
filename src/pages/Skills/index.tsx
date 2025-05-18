@@ -19,7 +19,8 @@ import { ScrollGSAP } from "../../AnimationsSroll";
 
 const Skills: React.FC = () => {
 
-  ScrollGSAP(".skills", 50, 0);
+  ScrollGSAP(".skills-container-h1", 50, 0);
+  ScrollGSAP(".skills-cards", 50, 0);
 
   const arraySkills = [
     { id: 1, element: <div className="container-card-skills" > <FaReact className="react" /> <div className="title-skills" >React</div> </div> },
@@ -182,15 +183,16 @@ const Skills: React.FC = () => {
   return (
     <div id="skills" className="skills">
       <div className="skills-container">
-        <h1 className="skills-container-h1" ><span className="skills-container-h1--1" >S</span><span className="skills-container-h1--2" >kills</span></h1>
+        <div className="skills-container-titles">
+          <h1 className="skills-container-h1" ><span className="skills-container-h1--1" >S</span><span className="skills-container-h1--2" >kills</span></h1>
+          <h2 className="skills-container-h2">My skill set</h2>
+          <h3 className="skills-container-h3">Specialization in Full-Stack Development</h3>
+        </div>
+
         <TbArrowBigLeftFilled onClick={manejarClickLeft} className="arrow-left" />
         <TbArrowBigRightFilled onClick={manejarClickRight} className="arrow-right" />
         <div className="skills-circle"></div>
-        <div className="skills-circle-1"></div>
-        <div className="skills-circle-2"></div>
-        <div className="skills-circle-3"></div>
-        <div className="skills-circle-4"></div>
-        <div className="skills-circle-5"></div>
+        <div className="skills-circle2"></div>
 
         <div className="skills-cards" >
           <div className="card-0" style={state[3]}>

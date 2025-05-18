@@ -35,13 +35,13 @@ const About: React.FC = () => {
         const touch = event.touches[0];
         actualizarPosicion(touch.clientX, touch.clientY);
         // Prevenir el comportamiento por defecto para evitar que la página haga scroll mientras se arrastra
-        event.preventDefault();
+        //event.preventDefault();
       }
     };
 
     // Añadir los event listeners para mouse y touch
     window.addEventListener('mousemove', manejadorMouseMove);
-    window.addEventListener('touchmove', manejadorTouchMove, { passive: false });
+    window.addEventListener('touchmove', manejadorTouchMove);
 
     // Limpiar los listeners cuando el componente se desmonte
     return () => {

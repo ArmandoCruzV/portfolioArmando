@@ -45,6 +45,7 @@ function Projects() {
 
   const description = [
     {
+      id: 1,
       label: <div className="container-img--card" >
         <div className="card-img" ><img src={products} className='products' loading="lazy" /></div>
         <div className="card-title-h3" >Product and Service</div>
@@ -62,6 +63,7 @@ function Projects() {
       url: "https://omarmantenimiento.netlify.app/",
     },
     {
+      id: 2,
       label: <div className="container-img--card" >
         <div className="card-img" ><img src={portafolio} className='portafolio' loading="lazy" /></div>
         <div className="card-title-h3" >Portfolio</div>
@@ -78,6 +80,7 @@ function Projects() {
       url: "https://armandocruzv.github.io/portafolio/",
     },
     {
+      id: 3,
       label: <div className="container-img--card" >
         <div className="card-img" ><img src={todo} className='todo' loading="lazy" /></div>
         <div className="card-title-h3" >Todo-list</div>
@@ -93,6 +96,7 @@ function Projects() {
       url: "https://armandocruzv.github.io/todo_list/",
     },
     {
+      id: 4,
       label: <div className="container-img--card" >
         <div className="card-img" ><img src={router} className='router' loading="lazy" /></div>
         <div className="card-title-h3" >React-router</div>
@@ -109,6 +113,7 @@ function Projects() {
       url: "https://armandocruzv.github.io/React-router-navegacion/",
     },
     {
+      id: 5,
       label: <div className="container-img--card" >
         <div className="card-title" >Encryptor</div>
         <div className="card-img" ><img src={encriptador} className='encriptador' /></div>
@@ -125,6 +130,7 @@ function Projects() {
       url: "https://armandocruzv.github.io/encriptador/",
     },
     {
+      id: 6,
       label: <div className="container-img--card" >
         <div className="card-img" ><img src={landing} className='landing' loading="lazy" /></div>
         <div className="card-title-h3" >Landing Page</div>
@@ -155,6 +161,7 @@ function Projects() {
       url: "https://armandocruzv.github.io/react-shop/",
     },
     {
+      id: 7,
       label: <div className="container-img--card" >
         <div className="card-title-h3" >CRUD(SpringBoot)</div>
         <div className="card-img" ><img src={Crud} className='crud' loading="lazy" /></div>
@@ -170,6 +177,7 @@ function Projects() {
       url: "https://github.com/ArmandoCruzV/crudExample/tree/main/src/main/java/com/api/crudExample",
     },
     {
+      id: 8,
       label: <div className="container-img--card" >
         <div className="card-title-h3" >Java connection</div>
         <div className="card-img" ><img src={dataServer} className='dataServer' loading="lazy" /></div>
@@ -184,6 +192,7 @@ function Projects() {
       url: "https://github.com/ArmandoCruzV/mensajes-app-java/tree/master/src/main/java",
     },
     {
+      id: 9,
       label: <div className="container-img--card" >
         <div className="card-title-h3" >Java project</div>
         <div className="card-img" ><img src={javaImg} className='dataServer' loading="lazy" /></div>
@@ -198,6 +207,7 @@ function Projects() {
       url: "https://github.com/ArmandoCruzV/MyMedicalAppointments/tree/main/src",
     },
     {
+      id: 10,
       label: <div className="container-img--card" >
         <div className="card-title-h3" >Node project</div>
         <div className="card-img" ><img src={nodeImg} className='nodeImg' loading="lazy" /></div>
@@ -226,8 +236,8 @@ function Projects() {
 
       <div className="grid-container">
         {Array.from({ length: description.length }).map((_, index) => (
-          <AnimateOnScroll>
-            <div className="grid-item" key={index}>
+          <AnimateOnScroll  key={index}>
+            <div className="grid-item" key={description[index].id}>
               {description[index].label}
               <div className={`description ${showDescriptions[index] ? 'show' : ''}`}>
                 <button onClick={() => toggleDescription(index)} className="container-close" ><FaWindowClose className="close-project" /></button>

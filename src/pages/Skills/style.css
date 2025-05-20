@@ -93,8 +93,9 @@
   height: 70vh;
   transform: translate(-20%, -20%);
 }
+
 .skills-circle2:before { 
-  background: #C3E2C2;
+  background: #FF90BB;
   width: 40vh;
   height: 40vh;
   transform: translate(-20%, -20%);
@@ -116,7 +117,7 @@
   100% { filter: hue-rotate(100deg); }
 }
 .skills-circle2 {
-  background:  #88AB8E;
+  background:  #81E7AF;
 }
 
 .skills-circle:before,
@@ -259,6 +260,34 @@
 .bash { color: white; }
 .ts { color: #7886C7 }
 
+
+@media (min-width: 2000px) {
+.skills-container { height: 100vh ; }
+
+.arrow-left { left: 35%; }
+.arrow-right { right: 35%; }
+
+}
+
+@media (max-width: 1999px) {
+.skills-container { height: 100vh ; }
+
+.arrow-left { left: 30%; }
+.arrow-right { right: 30%; }
+
+}
+
+@media (max-width: 1400px) {
+.arrow-left,
+.arrow-right {
+  font-size: 4rem;
+}
+
+.arrow-left { left: 23%; }
+.arrow-right { right: 23%; }
+
+}
+
 @media (max-width: 800px) {
 .skills-container-h1 {
   padding: 0;
@@ -280,24 +309,9 @@
   height: 30vh;
 }
 
-}
 
-@media (min-width: 1400px) {
-.arrow-left,
-.arrow-right {
-  font-size: 4rem;
-}
-
-.arrow-left { left: 23%; }
-.arrow-right { right: 23%; }
+.arrow-left { left: 3%; }
+.arrow-right { right: 3%; }
 
 }
 
-
-@media (min-width: 2000px) {
-.skills-container { height: 60vh ; }
-
-.arrow-left { left: 30%; }
-.arrow-right { right: 30%; }
-
-}

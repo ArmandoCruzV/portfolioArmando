@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
@@ -169,11 +169,34 @@ const Tux3D: React.FC = () => {
     };
   }, []);
 
+  //posicion depediendo de la width de la pantalla 
+  const [position, setPosition] = useState<{ top: string; left: string }>({
+    top: '0%',
+    left: '60%',
+  });
+  const updatePosition = () => {
+    const width = window.innerWidth;
+    if (width <= 768) {
+      // Versión móvil
+      setPosition({ top: '0%', left: '20%' });
+    } else {
+      // Versión PC
+      setPosition({ top: '0%', left: '60%' });
+    }
+  };
+  useEffect(() => {
+    updatePosition();
+    window.addEventListener('resize', updatePosition);
+    return () => {
+      window.removeEventListener('resize', updatePosition);
+    };
+  }, []);
+
   return (
     <div
       ref={mountRef}
       style={{
-        width: '100%',
+        maxWidth: '100vw',
         height: '400px',
         borderRadius: 12,
         overflow: 'hidden',
@@ -185,8 +208,8 @@ const Tux3D: React.FC = () => {
         userSelect: 'none',
         zIndex: '0',
         position: 'absolute',
-        top: 0,
-        left: 90,
+        top: position.top,
+        left: position.left,
         cursor: 'grab',
       }}
     />

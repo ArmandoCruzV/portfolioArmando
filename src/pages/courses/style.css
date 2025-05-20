@@ -359,7 +359,20 @@
 }
 .right-alura { background: blue; }
 
-@media (min-width: 1400px) {
+@media (min-width: 1410px) {
+.courses {
+    max-width: 100vw;
+    padding: 0% 15% 0% 15%;
+}
+}  
+
+@media (max-width: 1400px) {
+
+.courses {
+    max-width: 100vw;
+    padding: 0% 5% 0% 5%;
+}
+
 .h1-courses {
     justify-self: center;
     font-size: 4em;
@@ -377,63 +390,7 @@
 
 }
 
-
 @media (max-width: 668px) {
-.course-card {
-  width: 17rem;
-}
-
-.img-card {
-  width: 15rem;
-  height: 100%; 
-  object-fit: fill;
-}
-
-.platzi,
-.alura {
-  width: 10%;
-  height: 12%;
-  background: transparente;
-  transition: 0.5s;
-  transform:rotate(0deg);
-}
-.alura { background: transparente; }
-.h3-platzi,
-.h3-alura { 
-  transition: 0.5s; /* Transición suave para el hover */
-  transform: translateY(0);
-  z-index: 1;
-  color: white;
-}
-
-.top-platzi,
-.left-platzi,
-.bottom-platzi,
-.right-platzi,
-.top-alura,
-.left-alura,
-.bottom-alura,
-.right-alura {
-  display: none;
-  transition: 0.5s; /* Transición suave para el hover */
-  transform: translateY(0);
-  z-index: 1;
-  color: white;
-  background: white;
-}
-
-.image-platzi,
-.image-alura {
-  transition: 0.5s;
-  background: #fff;
-  transform: rotate(0deg);
-  z-index: 99;
-} 
-
-}
-
-
-@media (min-width: 668px) {
 
 .platzi,
 .alura {

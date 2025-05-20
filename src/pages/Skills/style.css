@@ -267,6 +267,11 @@
 .arrow-left { left: 35%; }
 .arrow-right { right: 35%; }
 
+.arrow-left,
+.arrow-right {
+  font-size: 4rem;
+}
+
 }
 
 @media (max-width: 1999px) {
@@ -280,15 +285,29 @@
 @media (max-width: 1400px) {
 .arrow-left,
 .arrow-right {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
-.arrow-left { left: 23%; }
-.arrow-right { right: 23%; }
+.arrow-left { 
+    left: 23%; 
+  }
+.arrow-right { 
+    right: 23%; 
+  }
+
+.skills-container { height: 125vh ; }
 
 }
 
 @media (max-width: 800px) {
+
+.skills-container { height: 120vh ; }
+
+.skills-container-titles {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
 .skills-container-h1 {
   padding: 0;
 }
@@ -308,7 +327,6 @@
   width: 30vh;
   height: 30vh;
 }
-
 
 .arrow-left { left: 3%; }
 .arrow-right { right: 3%; }

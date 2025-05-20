@@ -115,8 +115,8 @@ function Projects() {
     {
       id: 5,
       label: <div className="container-img--card" >
-        <div className="card-title" >Encryptor</div>
         <div className="card-img" ><img src={encriptador} className='encriptador' /></div>
+        <div className="card-title-h3" >Encryptor</div>
 
         <span className="previousText" >This project focuses on creating a web application for message encryption...</span>
         <ul className="icon-container--card" >
@@ -163,8 +163,8 @@ function Projects() {
     {
       id: 7,
       label: <div className="container-img--card" >
-        <div className="card-title-h3" >CRUD(SpringBoot)</div>
         <div className="card-img" ><img src={Crud} className='crud' loading="lazy" /></div>
+        <div className="card-title-h3" >CRUD(SpringBoot)</div>
 
         <span className="previousText" >This project involves the development of a CRUD application (Create, Read, Update, Delete)...</span>
         <ul className="icon-container--card" >
@@ -179,8 +179,8 @@ function Projects() {
     {
       id: 8,
       label: <div className="container-img--card" >
-        <div className="card-title-h3" >Java connection</div>
         <div className="card-img" ><img src={dataServer} className='dataServer' loading="lazy" /></div>
+        <div className="card-title-h3" >Java connection</div>
 
         <span className="previousText" >CRUD, using Java and direct SQL queries to interact with a MySQL database...</span>
         <ul className="icon-container--card" >
@@ -194,8 +194,8 @@ function Projects() {
     {
       id: 9,
       label: <div className="container-img--card" >
-        <div className="card-title-h3" >Java project</div>
         <div className="card-img" ><img src={javaImg} className='dataServer' loading="lazy" /></div>
+        <div className="card-title-h3" >Java project</div>
 
         <span className="previousText" >This project involves the development of a medical appointment management system using Java...</span>
         <ul className="icon-container--card" >
@@ -209,8 +209,8 @@ function Projects() {
     {
       id: 10,
       label: <div className="container-img--card" >
-        <div className="card-title-h3" >Node project</div>
         <div className="card-img" ><img src={nodeImg} className='nodeImg' loading="lazy" /></div>
+        <div className="card-title-h3" >Node project</div>
 
         <span className="previousText" >CRUD (Create, Read, Update, Delete) using Node.js and the Express framework...</span>
         <ul className="icon-container--card" >
@@ -236,7 +236,7 @@ function Projects() {
 
       <div className="grid-container">
         {Array.from({ length: description.length }).map((_, index) => (
-          <AnimateOnScroll  key={index}>
+          <AnimateOnScroll key={index}>
             <div className="grid-item" key={description[index].id}>
               {description[index].label}
               <div className={`description ${showDescriptions[index] ? 'show' : ''}`}>

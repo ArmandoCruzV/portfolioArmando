@@ -178,7 +178,7 @@ const Tux3D: React.FC = () => {
     const width = window.innerWidth;
     if (width <= 768) {
       // Versión móvil
-      setPosition({ top: '0%', left: '20%' });
+      setPosition({ top: '0%', left: '0%' });
     } else {
       // Versión PC
       setPosition({ top: '0%', left: '60%' });

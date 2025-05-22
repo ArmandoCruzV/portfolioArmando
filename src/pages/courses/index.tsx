@@ -4,6 +4,7 @@ import platzi from '../../assets/platzi.png';
 import alura from '../../assets/alura.png';
 import { ScrollGSAP } from '../../AnimationsSroll/index.tsx';
 import { ImgCourses } from './ImgCourses';
+import { AnimatedOvni } from '../../AnimationsSroll/AnimationOvni.tsx';
 
 const Courses: React.FC = () => {
   const carouselRef = useRef<HTMLDivElement>(null);
@@ -59,6 +60,8 @@ const Courses: React.FC = () => {
   return (
     <div>
       <div id="courses" className="courses">
+
+        <AnimatedOvni />
 
         <div>
           <div className="h1-courses" ><span className="h1-courses-1" >C</span><span className="h1-courses-2" >ourses</span></div>

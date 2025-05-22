@@ -28,8 +28,7 @@
  /* animation: float 6s ease-in-out infinite; */
   bottom: -5%;
   left: 20%;
-  z-index: 10;
-  
+  z-index: 0; 
 }
 
 .luna {

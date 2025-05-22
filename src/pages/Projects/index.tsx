@@ -28,6 +28,7 @@ import './style.css';
 import { ScrollGSAP } from '../../AnimationsSroll/index.tsx';
 import Tux3D from '../../assets/world.tsx'
 import { AnimateOnScroll } from '../../AnimationsSroll/AnimateOnScroll.tsx';
+import { AnimatedOvni } from "../../AnimationsSroll/AnimationOvni.tsx";
 
 function Projects() {
   ScrollGSAP(".portfolio-title--container", 0, -50);
@@ -226,6 +227,7 @@ function Projects() {
   return (
     <div id="projects" className="projects">
 
+      <AnimatedOvni />
       <Tux3D />
 
       <div className="portfolio-title--container" >

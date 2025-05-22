@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Onepiece from '../../assets/onepiece.jpg';
 import { AnimateOnScroll } from '../../AnimationsSroll/AnimateOnScroll.tsx';
+import { AnimatedOvni } from '../../AnimationsSroll/AnimationOvni.tsx';
 import './style.css'
 
 const About: React.FC = () => {
@@ -85,12 +86,14 @@ const About: React.FC = () => {
   }, []);
 
   const className = isAnimationTriggered ? 'H1active' : 'H1inactive';
-
   return (
     <div id='about' className='about'>
-      <div className='about-container' ref={componentRef} >
-        <div>
 
+      <div className='about-container' ref={componentRef} >
+
+        <AnimatedOvni />
+
+        <div>
           <div className='img-profile--container'>
             <img src={Onepiece} className='img-profile' loading="lazy" />
           </div>

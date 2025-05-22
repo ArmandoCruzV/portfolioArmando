@@ -15,11 +15,14 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, 600px );
   justify-content: center;
+  z-index: 1;
 }
 
 .h1-container {
+  position: relative;
   justify-self: center;
   margin: 1rem 0 8px 0;
+  z-index: 3;
 }
 
 .H1inactive {
@@ -75,9 +78,11 @@ h3 {
 }
 
 p {
+  position: relative;
   padding: 0 0 2rem 0;
   color: white;
   text-align: center;
+  z-index: 5;
 
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;

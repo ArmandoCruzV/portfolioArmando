@@ -16,6 +16,7 @@ import { SiTypescript } from "react-icons/si";
 import './style.css'
 import { useEffect, useState } from "react";
 import { ScrollGSAP } from "../../AnimationsSroll";
+import { AnimatedOvni } from "../../AnimationsSroll/AnimationOvni";
 
 const Skills: React.FC = () => {
 
@@ -182,7 +183,11 @@ const Skills: React.FC = () => {
 
   return (
     <div id="skills" className="skills">
-      <div className="skills-container">
+
+      <div className="skills-container">        
+
+      <AnimatedOvni />
+
         <div className="skills-container-titles">
           <h1 className="skills-container-h1" ><span className="skills-container-h1--1" >S</span><span className="skills-container-h1--2" >kills</span></h1>
           <h2 className="skills-container-h2">My skill set</h2>

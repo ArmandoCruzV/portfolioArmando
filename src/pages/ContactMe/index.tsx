@@ -1,9 +1,9 @@
-//import React, { useEffect } from 'react';
 import { FaGithub, FaLinkedin, FaTiktok } from 'react-icons/fa';
 import { ScrollGSAP } from "../../AnimationsSroll";
 import luna from "../../assets/contactMe/luna.png";
 import tierra from "../../assets/contactMe/tierra.png";
 import astronauta from "../../assets/contactMe/astronauta.png";
+import { AnimatedOvni } from '../../AnimationsSroll/AnimationOvni.tsx';
 import "./style.css"
 
 const socialLinks = [
@@ -35,6 +35,9 @@ const ContactMe: React.FC = () => {
 
   return (
     <div id='contacto' className="parallax">
+
+      <AnimatedOvni />
+
       <div className="background">
         <img src={luna} className="luna" alt="Planet 1" loading="lazy" />
         <img src={tierra} className="planet" alt="Planet 2" loading="lazy" />

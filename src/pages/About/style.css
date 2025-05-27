@@ -127,6 +127,8 @@ p {
   position: relative;
   overflow: hidden;
   align-content: center;
+  position: relative;
+  z-index: 3;
 }
 
 .tree:hover .body {

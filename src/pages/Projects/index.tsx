@@ -60,7 +60,7 @@ function Projects() {
         </ul>
 
       </div>,
-      text: "Este proyecto es una aplicación web interactiva desarrollada utilizando TypeScript, React y CSS, diseñada para ofrecer una experiencia de usuario fluida y atractiva. La aplicación se centra en  mostrar un negocio y sus productos y servicios, permitiendo a los usuarios explorar fácilmente la información disponible.",
+      text: "This project is an interactive web application developed using TypeScript, React, and CSS, designed to provide a smooth and engaging user experience. The application focuses on showcasing a business and its products and services, allowing users to easily explore the available information.",
       url: "https://omarmantenimiento.netlify.app/",
     },
     {
@@ -77,7 +77,7 @@ function Projects() {
           <li><FaReact className="react-card" /><span className="span-cards">React</span></li>
         </ul>
       </div>,
-      text: "Este proyecto es un portafolio personal diseñado para mostrar mis habilidades y proyectos como programador frontend. Desarrollado con TypeScript, React y CSS, este portafolio no solo resalta mis capacidades técnicas, sino que también proporciona una experiencia de usuario atractiva y fluida.",
+      text: "This project is a personal portfolio designed to showcase my skills and projects as a frontend developer. Built with TypeScript, React, and CSS, this portfolio not only highlights my technical abilities but also provides an engaging and seamless user experience.",
       url: "https://armandocruzv.github.io/portafolio/",
     },
     {
@@ -93,7 +93,7 @@ function Projects() {
           <li><FaCss3Alt className="css-card" /><span className="span-cards">Css</span></li>
         </ul>
       </div>,
-      text: "Este proyecto se enfoca en desarrollar una aplicación de lista de tareas (to-do) utilizando React.js. La aplicación permite a los usuarios agregar nuevas tareas, eliminar tareas existentes y marcarlas como completadas. Con una interfaz intuitiva y responsiva para gestionar las tareas diarias de manera sencilla.",
+      text: "This project focuses on developing a to-do list application using React.js. The application allows users to add new tasks, delete existing ones, and mark them as completed. It features an intuitive and responsive interface for managing daily tasks with ease.",
       url: "https://armandocruzv.github.io/todo_list/",
     },
     {
@@ -110,7 +110,7 @@ function Projects() {
         </ul>
 
       </div>,
-      text: "Este proyecto desarrolla un blog utilizando React.js y React Router DOM para una navegación fluida. Se implementan medidas de seguridad con Node.js para manejar endpoints, junto con autenticación de usuarios, roles y permisos, asegurando que solo los usuarios autorizados puedan realizar ciertas acciones.",
+      text: "This project involves developing a blog using React.js and React Router DOM for smooth navigation. Security measures are implemented with Node.js to handle endpoints, along with user authentication, roles, and permissions, ensuring that only authorized users can perform certain actions.",
       url: "https://armandocruzv.github.io/React-router-navegacion/",
     },
     {
@@ -127,7 +127,7 @@ function Projects() {
         </ul>
 
       </div>,
-      text: "Este proyecto se centra en la creación de una aplicación web para el encriptado de mensajes utilizando HTML, CSS y JavaScript. La aplicación permite a los usuarios ingresar un mensaje y convertirlo en un formato encriptado para asegurar la privacidad y confidencialidad de la información.",
+      text: "This project focuses on creating a web application for message encryption using HTML, CSS, and JavaScript. The application allows users to input a message and convert it into an encrypted format to ensure the privacy and confidentiality of the information.",
       url: "https://armandocruzv.github.io/encriptador/",
     },
     {
@@ -143,7 +143,7 @@ function Projects() {
           <li><FaReact className="react-card" /><span className="span-cards">React</span></li>
         </ul>
       </div>,
-      text: "Este proyecto desarrolla una aplicación web para una empresa de cuchillas y molinos para la industria del plástico, usando React.js y React Router DOM. La aplicación permite explorar productos, obtener información detallada y contactar con el equipo comercial, ofreciendo una navegación fluida y una interfaz moderna.",
+      text: "This project involves developing a web application for a company specializing in blades and mills for the plastic industry, using React.js and React Router DOM. The application allows users to explore products, access detailed information, and contact the sales team, offering smooth navigation and a modern interface.",
       url: "https://elegant-sunshine-437c40.netlify.app/nosotros",
     },
     {
@@ -174,7 +174,7 @@ function Projects() {
           <li><SiSpringboot className="springBoot" /><span className="span-cards">SpringBoot</span></li>
         </ul>
       </div>,
-      text: "Este proyecto consiste en el desarrollo de una aplicación CRUD (Crear, Leer, Actualizar, Eliminar) utilizando Java y Spring Boot. La aplicacíon se conecta a una base de datos MySQL, la cual fue diseñada y configurada especificamente para este proyecto.",
+      text: "This project consists of developing a CRUD (Create, Read, Update, Delete) application using Java and Spring Boot. The application connects to a MySQL database, which was specifically designed and configured for this project.",
       url: "https://github.com/ArmandoCruzV/crudExample/tree/main/src/main/java/com/api/crudExample",
     },
     {
@@ -189,7 +189,7 @@ function Projects() {
           <li> <TbBrandMysql className="mysql-card" /><span className="span-cards">MySQL</span></li>
         </ul>
       </div>,
-      text: "Este proyecto se centra en el desarrollo de una aplicación CRUD (Crear, Leer, Actualizar, Eliminar) utilizando Java y consultas SQL directas para interactuar con una base de datos MySQL. La base de datos fue diseñada y creada manualmente para satisfacer las necesidades específicas del proyecto.",
+      text: "This project focuses on developing a CRUD (Create, Read, Update, Delete) application using Java and direct SQL queries to interact with a MySQL database. The database was manually designed and created to meet the specific needs of the project.",
       url: "https://github.com/ArmandoCruzV/mensajes-app-java/tree/master/src/main/java",
     },
     {
@@ -204,7 +204,7 @@ function Projects() {
         </ul>
 
       </div>,
-      text: "Este proyecto consiste en el desarrollo de un sistema de gestión de citas médicas utilizando Java. El objetivo es facilitar la programación, seguimiento y gestión de citas entre pacientes y profesionales de la salud.",
+      text: "This project involves the development of a medical appointment management system using Java. The goal is to facilitate the scheduling, tracking, and management of appointments between patients and healthcare professionals.",
       url: "https://github.com/ArmandoCruzV/MyMedicalAppointments/tree/main/src",
     },
     {
@@ -219,7 +219,7 @@ function Projects() {
           <li><SiExpress className="express-card" /><span className="span-cards">Express</span></li>
         </ul>
       </div>,
-      text: "Este proyecto se enfoca en el desarrollo de una aplicación CRUD (Crear, Leer, Actualizar, Eliminar) utilizando Node.js y el framework Express. El objetivo es construir una API RESTful que permita gestionar datos de manera eficiente a través de operaciones básicas sobre una base de datos.",
+      text: "This project focuses on developing a CRUD (Create, Read, Update, Delete) application using Node.js and the Express framework. The goal is to build a RESTful API that enables efficient data management through basic operations on a database.",
       url: "https://github.com/ArmandoCruzV/nodeProject",
     },
   ]
@@ -227,8 +227,8 @@ function Projects() {
   return (
     <div id="projects" className="projects">
 
-      <AnimatedOvni />
       <Tux3D />
+      <AnimatedOvni startx={0} endx={2} starty={4} endy={2} />
 
       <div className="portfolio-title--container" >
         <div className="portfolio-title" ><span className="portfolio-title-1" >P</span><span className="portfolio-title-2">rojects</span></div>

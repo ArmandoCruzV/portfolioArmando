@@ -89,9 +89,9 @@ const About: React.FC = () => {
   return (
     <div id='about' className='about'>
 
-      <div className='about-container' ref={componentRef} >
+      <AnimatedOvni startx={0} endx={-2} starty={5} endy={-4} />
 
-        <AnimatedOvni />
+      <div className='about-container' ref={componentRef} >
 
         <div>
           <div className='img-profile--container'>

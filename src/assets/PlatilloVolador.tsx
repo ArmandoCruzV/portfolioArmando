@@ -1,13 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import * as THREE from 'three';
+import { num } from './animate-type';
 
-type num = {
-  startx: number;
-  endx: number;
-  totalDistanceX: number;
-}
-
-const PlatilloVoladorMetalSlug: React.FC<num> = ({ startx = 0, endx = -2 }) => {
+const PlatilloVoladorMetalSlug: React.FC<num> = ({ startx = 0, endx = -2, starty = 5, endy = -4 }: num) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -117,11 +112,11 @@ const PlatilloVoladorMetalSlug: React.FC<num> = ({ startx = 0, endx = -2 }) => {
 
     const startX = startx;   // posición inicial Y (top)
     const endX = endx;    // posición final Y (bottom)
-    const startY = 5;   // posición inicial Y (top)
-    const endY = -4;    // posición final Y (bottom)
+    const startY = starty;   // posición inicial Y (top)
+    const endY = endy;    // posición final Y (bottom)
     const totalDistance = startY - endY; // distancia total a recorrer                                                                                                                                  
     const totalDistanceX = startX - endX; // distancia total a recorrer
-    const duration = 4000; // duración de la animación en milisegundos
+    const duration = 2300; // duración de la animación en milisegundos
 
     let startTime: number | null = null;
 

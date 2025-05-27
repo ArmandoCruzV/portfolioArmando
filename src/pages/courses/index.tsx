@@ -59,11 +59,12 @@ const Courses: React.FC = () => {
 
   return (
     <div>
+
+      <AnimatedOvni endx={-2} endy={1} />
+
       <div id="courses" className="courses">
 
-        <AnimatedOvni />
-
-        <div>
+        <div className="titles-courses" >
           <div className="h1-courses" ><span className="h1-courses-1" >C</span><span className="h1-courses-2" >ourses</span></div>
           <h2 className="skills-container-h2">My Learning Journey</h2>
           <h3 className="skills-container-h3">Courses I've completed to grow my skills</h3>

@@ -7,7 +7,14 @@
   position: sticky;
   top: 0;
   background: #e0f2fe;
-  overflow-x: hidden;
+  overflow: hidden;
+  
+  position: relative; 
+}
+
+.titles-courses {
+  position: relative;
+  z-index: 3;
 }
 
 .h1-courses {
@@ -51,7 +58,6 @@
   height: auto;
   padding: 10px;
   gap: 10px;
-  z-index: 3;
 }
 
 .btn-course {
@@ -64,6 +70,7 @@
   margin-top: 1rem;
   border-radius: 9px;
   cursor: pointer;
+  z-index: 7;
 }
 .btn-course:hover {
   background: linear-gradient(45deg, #3B6790, #EFB036); 
@@ -143,6 +150,7 @@
   padding: 0.5rem;
   display: flex;
   justify-content: space-between;
+  
 }
 
 .buttonStyleLeft,
@@ -161,7 +169,7 @@
   width: 3rem;
   height: 3rem;
   border-radius: 9px;
-  zIndex: 1;
+  z-index: 7;
 }
 .buttonStyleLeft:hover,
 .buttonStyleRight:hover{
@@ -385,9 +393,18 @@
   }
 
 .close {
-    top: 10%;
-    right: 30%;
+    top: 5%;
+    right: 5%;
 }
+
+.img-card--full{
+    width: 100%;
+    justify-self: center;
+  }
+.modal {
+    display: grid;
+    width: 100%;
+  }
 
 }
 

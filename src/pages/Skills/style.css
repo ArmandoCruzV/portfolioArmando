@@ -15,7 +15,9 @@
 }
 
 .skills-container-titles {
-  padding: 2rem;    
+  padding: 2rem;  
+  position: relative; 
+  z-index: 6;
 }
 
 .skills-container-h1 {
@@ -139,6 +141,11 @@
   border-radius: 50%;
   cursor: pointer;
   z-index: 9;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+   background: rgba(000, 000, 255, 0.5);
 }
 
 .arrow-left {

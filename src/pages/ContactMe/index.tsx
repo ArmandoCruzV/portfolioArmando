@@ -36,7 +36,7 @@ const ContactMe: React.FC = () => {
   return (
     <div id='contacto' className="parallax">
 
-      <AnimatedOvni />
+      <AnimatedOvni startx={0} endx={-2} starty={5} endy={-4} />
 
       <div className="background">
         <img src={luna} className="luna" alt="Planet 1" loading="lazy" />

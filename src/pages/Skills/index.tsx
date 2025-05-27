@@ -184,9 +184,9 @@ const Skills: React.FC = () => {
   return (
     <div id="skills" className="skills">
 
-      <div className="skills-container">        
+      <div className="skills-container">
 
-      <AnimatedOvni />
+        <AnimatedOvni startx={0} endx={-2} starty={4} endy={2.5} />
 
         <div className="skills-container-titles">
           <h1 className="skills-container-h1" ><span className="skills-container-h1--1" >S</span><span className="skills-container-h1--2" >kills</span></h1>
